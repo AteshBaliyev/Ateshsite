@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Smartphone,
   Gamepad2,
@@ -142,8 +143,14 @@ export default function AteshStudioSection() {
             {/* Dev Entity */}
             <div className="flex items-start gap-3.5">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-yellow-600 p-[1.5px] shrink-0 shadow-lg">
-                <div className="w-full h-full bg-[#080911] rounded-[14px] flex items-center justify-center">
-                  <Smartphone className="w-6 h-6 text-amber-400" />
+                <div className="w-full h-full bg-[#080911] rounded-[14px] flex items-center justify-center p-1.5 overflow-hidden">
+                  <Image
+                    src="/images/logo.png"
+                    alt="Atesh Studio Rəsmi Loqosu"
+                    width={40}
+                    height={40}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
               <div>

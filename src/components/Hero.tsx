@@ -5,7 +5,7 @@ import TypewriterHeadline from '@/components/TypewriterHeadline';
 
 export default function Hero() {
   return (
-    <section aria-label="Giriş Bölməsi" className="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden">
+    <section aria-label="Giriş Bölməsi" className="relative pt-12 pb-16 sm:pt-20 sm:pb-24 overflow-hidden">
       {/* Ambient background glows */}
       <div className="ambient-glow w-96 h-96 -top-12 -left-20 bg-amber-500/25" />
       <div className="ambient-glow w-[500px] h-[500px] top-40 -right-32 bg-yellow-600/20" />
@@ -16,113 +16,128 @@ export default function Hero() {
           <TypewriterHeadline />
 
           {/* Sub-headline */}
-          <p className="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl">
+          <p className="mt-5 text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed max-w-3xl">
             İKT tələbəsi, <strong className="text-amber-300 font-semibold">Atesh Studio</strong> qurucusu, <strong className="text-white font-semibold">Prime Media Group</strong> rəhbəri və mürəkkəb sistemləri intellektual alqoritmlər, avtonom AI agentləri və modern mobil/veb arxitekturası ilə inşa edən proqram mühəndisiyəm.
           </p>
 
-          {/* Prestigious Accolades Badges */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#0f121d] border border-amber-500/20 text-xs text-slate-200">
-              <Award className="w-4 h-4 text-amber-400" />
-              <span><strong>SAF 2025 VEX V5</strong> Qızıl Medal</span>
-            </div>
+          {/* Prestigious Accolades Badges - Clean, Compact & Elegant */}
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 max-w-2xl">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#0f121d] border border-amber-500/25 text-xs text-slate-200 shadow-sm">
+              <Award className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span><strong>SAF 2025</strong> Qızıl Medal</span>
+            </span>
 
-            <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#0f121d] border border-amber-500/20 text-xs text-slate-200">
-              <Trophy className="w-4 h-4 text-amber-400" />
-              <span><strong>TransportTech Hakatonu</strong> 1-ci Yer (4444 AZN)</span>
-            </div>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#0f121d] border border-amber-500/25 text-xs text-slate-200 shadow-sm">
+              <Trophy className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span><strong>TransportTech</strong> 1-ci Yer (4444 AZN)</span>
+            </span>
 
-            <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#0f121d] border border-amber-500/20 text-xs text-slate-200">
-              <Bot className="w-4 h-4 text-amber-400" />
-              <span>Atesh Studio & Bondify Qurucusu</span>
-            </div>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#0f121d] border border-amber-500/25 text-xs text-slate-200 shadow-sm">
+              <Bot className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span>Atesh Studio Qurucusu</span>
+            </span>
           </div>
 
-          {/* Primary Action Buttons */}
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-3 w-full">
-            {/* Atesh Studio CTA */}
-            <Link
-              href="/#atesh-studio"
-              prefetch={true}
-              className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-xs sm:text-sm text-black bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 shadow-[0_6px_25px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_35px_rgba(212,175,55,0.6)] hover:-translate-y-0.5 transition-all"
-            >
-              <span>Atesh Studio (Apps & Games)</span>
-              <ArrowRight className="w-4 h-4 text-black" />
-            </Link>
+          {/* Primary Action Buttons & Direct Channels */}
+          <div className="mt-8 sm:mt-10 flex flex-col items-center gap-4 w-full">
+            {/* Main Action Pair: Luxury Balanced Layout */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto">
+              {/* Atesh Studio CTA */}
+              <Link
+                href="/#atesh-studio"
+                prefetch={true}
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm text-black bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 shadow-[0_4px_22px_rgba(212,175,55,0.4)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.6)] hover:-translate-y-0.5 active:scale-95 transition-all"
+              >
+                <span>Atesh Studio (Apps & Games)</span>
+                <ArrowRight className="w-4 h-4 text-black" />
+              </Link>
 
-            {/* WhatsApp CTA */}
-            <a
-              href="https://wa.me/994556422545"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Atəş Balıyev ilə birbaşa WhatsApp vasitəsilə əlaqə qurun"
-              className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm bg-gradient-to-r from-emerald-600 to-emerald-500 text-white shadow-[0_6px_25px_rgba(16,185,129,0.3)] hover:shadow-[0_8px_35px_rgba(16,185,129,0.5)] hover:-translate-y-0.5 transition-all"
-            >
-              <MessageSquare className="w-4 h-4" />
-              <span>WhatsApp ilə Yazın</span>
-            </a>
+              {/* View Projects CTA */}
+              <Link
+                href="/#layiheler"
+                prefetch={true}
+                className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-slate-200 bg-[#0e111d] border border-slate-700/80 hover:border-amber-400/50 hover:text-white hover:-translate-y-0.5 active:scale-95 transition-all shadow-sm"
+              >
+                <span>Bütün Layihələrə Bax</span>
+              </Link>
+            </div>
 
-            {/* Telegram CTA */}
-            <a
-              href="https://t.me/Baliyews"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Atəş Balıyev Telegram kanalı"
-              className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm bg-gradient-to-r from-sky-600 to-cyan-500 text-white shadow-[0_6px_25px_rgba(14,165,233,0.3)] hover:shadow-[0_8px_35px_rgba(14,165,233,0.5)] hover:-translate-y-0.5 transition-all"
-            >
-              <Send className="w-4 h-4" />
-              <span>Telegram: @Baliyews</span>
-            </a>
+            {/* Branded Quick-Connect Social Row */}
+            <div className="flex items-center justify-center gap-2.5 pt-1 w-full flex-wrap">
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/994556422545"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Atəş Balıyev ilə WhatsApp üzərindən yazışın"
+                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#0f1422] border border-emerald-500/30 hover:border-emerald-400 text-slate-200 hover:text-emerald-300 text-xs font-medium transition shadow-sm"
+              >
+                <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
+                <span>WhatsApp ilə Yaz</span>
+              </a>
 
-            {/* Instagram CTA */}
-            <a
-              href="https://instagram.com/atesh_baliyev?igsh=MXNseDRyeGNwZzZpNw=="
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Atəş Balıyev Instagram profili"
-              className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm bg-gradient-to-r from-pink-600 via-rose-500 to-amber-500 text-white shadow-[0_6px_25px_rgba(244,63,94,0.3)] hover:shadow-[0_8px_35px_rgba(244,63,94,0.5)] hover:-translate-y-0.5 transition-all"
-            >
-              <InstagramIcon className="w-4 h-4" />
-              <span>Instagram</span>
-            </a>
+              {/* Telegram */}
+              <a
+                href="https://t.me/Baliyews"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Atəş Balıyev Telegram kanalı"
+                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#0f1422] border border-sky-500/30 hover:border-sky-400 text-slate-200 hover:text-sky-300 text-xs font-medium transition shadow-sm"
+              >
+                <Send className="w-3.5 h-3.5 text-sky-400" />
+                <span>Telegram</span>
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://instagram.com/atesh_baliyev?igsh=MXNseDRyeGNwZzZpNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Atəş Balıyev Instagram profili"
+                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#0f1422] border border-pink-500/30 hover:border-pink-400 text-slate-200 hover:text-pink-300 text-xs font-medium transition shadow-sm"
+              >
+                <InstagramIcon className="w-3.5 h-3.5 text-pink-400" />
+                <span>Instagram</span>
+              </a>
+            </div>
           </div>
 
           {/* Key Competence Metrics Grid */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
-            <div className="card-luxury p-5 text-left">
-              <div className="flex items-center gap-2 text-amber-400 mb-2">
-                <Award className="w-5 h-5" />
-                <span className="text-xs uppercase tracking-wider text-slate-400 font-medium">SAF 2025</span>
+          <div className="mt-14 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 w-full">
+            <div className="card-luxury p-4 sm:p-5 text-left">
+              <div className="flex items-center gap-2 text-amber-400 mb-1.5">
+                <Award className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
+                <span className="text-[11px] sm:text-xs uppercase tracking-wider text-slate-400 font-medium">SAF 2025</span>
               </div>
-              <div className="text-2xl font-bold text-amber-400">Qızıl Medal</div>
-              <p className="text-xs text-slate-400 mt-1">VEX V5 Robotexnika Çempionatı</p>
+              <div className="text-xl sm:text-2xl font-bold text-amber-400">Qızıl Medal</div>
+              <p className="text-[11px] sm:text-xs text-slate-400 mt-1">VEX V5 Robotexnika</p>
             </div>
 
-            <div className="card-luxury p-5 text-left">
-              <div className="flex items-center gap-2 text-amber-400 mb-2">
-                <Trophy className="w-5 h-5" />
-                <span className="text-xs uppercase tracking-wider text-slate-400 font-medium">TransportTech</span>
+            <div className="card-luxury p-4 sm:p-5 text-left">
+              <div className="flex items-center gap-2 text-amber-400 mb-1.5">
+                <Trophy className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
+                <span className="text-[11px] sm:text-xs uppercase tracking-wider text-slate-400 font-medium">TransportTech</span>
               </div>
-              <div className="text-2xl font-bold text-white">1-ci Yer</div>
-              <p className="text-xs text-slate-400 mt-1">4444 AZN Mükafat & AgTech Qələbəsi</p>
+              <div className="text-xl sm:text-2xl font-bold text-white">1-ci Yer</div>
+              <p className="text-[11px] sm:text-xs text-slate-400 mt-1">4444 AZN Hakaton</p>
             </div>
 
-            <div className="card-luxury p-5 text-left">
-              <div className="flex items-center gap-2 text-amber-400 mb-2">
-                <Layers className="w-5 h-5" />
-                <span className="text-xs uppercase tracking-wider text-slate-400 font-medium">Sosial Platforma</span>
+            <div className="card-luxury p-4 sm:p-5 text-left">
+              <div className="flex items-center gap-2 text-amber-400 mb-1.5">
+                <Layers className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
+                <span className="text-[11px] sm:text-xs uppercase tracking-wider text-slate-400 font-medium">Sosial Platforma</span>
               </div>
-              <div className="text-2xl font-bold text-white">Bondify</div>
-              <p className="text-xs text-slate-400 mt-1">Telegram Mini App & Coin İqtisadiyyatı</p>
+              <div className="text-xl sm:text-2xl font-bold text-white">Bondify</div>
+              <p className="text-[11px] sm:text-xs text-slate-400 mt-1">TMA & Coin İqtisadiyyatı</p>
             </div>
 
-            <div className="card-luxury p-5 text-left">
-              <div className="flex items-center gap-2 text-amber-400 mb-2">
-                <Cpu className="w-5 h-5" />
-                <span className="text-xs uppercase tracking-wider text-slate-400 font-medium">E-ticarət</span>
+            <div className="card-luxury p-4 sm:p-5 text-left">
+              <div className="flex items-center gap-2 text-amber-400 mb-1.5">
+                <Cpu className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
+                <span className="text-[11px] sm:text-xs uppercase tracking-wider text-slate-400 font-medium">E-ticarət</span>
               </div>
-              <div className="text-2xl font-bold text-amber-400">Electrolify</div>
-              <p className="text-xs text-slate-400 mt-1">Qlobal Vitrinlər, Meta & TikTok Ads</p>
+              <div className="text-xl sm:text-2xl font-bold text-amber-400">Electrolify</div>
+              <p className="text-[11px] sm:text-xs text-slate-400 mt-1">Qlobal Vitrinlər & Ads</p>
             </div>
           </div>
         </div>

@@ -90,6 +90,9 @@ export default function RootLayout({
     <html lang="az" className="dark">
       <head>
         <link rel="canonical" href="https://atesh.site" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/images/logo.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/images/logo.png" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
         <link rel="llms-txt" href="/llms.txt" type="text/markdown" />
         <link rel="llms-full-txt" href="/llms-full.txt" type="text/markdown" />
         <meta
