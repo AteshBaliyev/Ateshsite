@@ -201,7 +201,7 @@ export default function PrivacyPolicyPage() {
               Our general applications (such as Bondify and TələbəX) are designed for general audiences and young adults and are not directed to children under 13 years of age. In Bondify, we implement a dedicated <strong>Dual Age Mode</strong> to safeguard youth and provide separated age-appropriate environments.
             </p>
             <p>
-              We do not knowingly collect personal identifiable information from children under 13. If you become aware that a child has provided personal information without parental consent, please contact us at <a href="mailto:ates.baliyev.01@gmail.com" className="text-amber-400 underline">ates.baliyev.01@gmail.com</a>, and we will delete the data immediately.
+              We do not knowingly collect personal identifiable information from children under 13. If you become aware that a child has provided personal information without parental consent, please contact us at <a href="mailto:atesbaliyev@gmail.com" className="text-amber-400 underline">atesbaliyev@gmail.com</a>, and we will delete the data immediately.
             </p>
           </section>
 
@@ -260,8 +260,8 @@ export default function PrivacyPolicyPage() {
               <p><strong className="text-white">Founder & Lead Developer:</strong> Atəş Balıyev (Atesh Baliyev)</p>
               <p>
                 <strong className="text-white">Official Support Email:</strong>{' '}
-                <a href="mailto:ates.baliyev.01@gmail.com" className="text-amber-400 hover:underline font-bold">
-                  ates.baliyev.01@gmail.com
+                <a href="mailto:atesbaliyev@gmail.com" className="text-amber-400 hover:underline font-bold">
+                  atesbaliyev@gmail.com
                 </a>
               </p>
               <p><strong className="text-white">Location:</strong> Ganja, Azerbaijan</p>
@@ -284,7 +284,7 @@ export default function PrivacyPolicyPage() {
               Toplanan məlumatlar yalnız tətbiqlərin düzgün işləməsi və sabitliyi üçün istifadə edilir, heç bir halda üçüncü şəxslərə satılmır və ya ötürülmür. İstifadəçilər öz hesablarını və şəxsi məlumatlarını istənilən vaxt tətbiq daxilindən və ya <Link href="/data-deletion" className="text-amber-400 underline">Məlumatların Silinməsi Səhifəsi</Link> vasitəsilə 7 iş günü ərzində tam silə bilərlər.
             </p>
             <p>
-              Hər hansı hüquqi və ya texniki sualınız yaranarsa, rəsmi e-poçt ünvanımız vasitəsilə bizimlə əlaqə saxlaya bilərsiniz: <strong className="text-amber-300">ates.baliyev.01@gmail.com</strong>.
+              Hər hansı hüquqi və ya texniki sualınız yaranarsa, rəsmi e-poçt ünvanımız vasitəsilə bizimlə əlaqə saxlaya bilərsiniz: <strong className="text-amber-300">atesbaliyev@gmail.com</strong>.
             </p>
           </div>
         </div>

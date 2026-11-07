@@ -107,7 +107,7 @@ export default function DataDeletionPage() {
               </p>
               <ul className="space-y-2 text-xs text-slate-300 list-disc list-inside pl-1">
                 <li>Fill out the quick request form below.</li>
-                <li>Or send an email to <a href="mailto:ates.baliyev.01@gmail.com?subject=Data%20Deletion%20Request" className="text-amber-400 font-bold underline">ates.baliyev.01@gmail.com</a> with subject &quot;Data Deletion Request&quot;.</li>
+                <li>Or send an email to <a href="mailto:atesbaliyev@gmail.com?subject=Data%20Deletion%20Request" className="text-amber-400 font-bold underline">atesbaliyev@gmail.com</a> with subject &quot;Data Deletion Request&quot;.</li>
                 <li>Specify the application name and your registered email/username.</li>
                 <li>Our engineering team will complete data eradication within <strong>7 business days</strong>.</li>
               </ul>
@@ -134,7 +134,7 @@ export default function DataDeletionPage() {
               <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto" />
               <h4 className="text-lg font-bold text-white">Sorğunuz Qeydə Alındı! / Request Received</h4>
               <p className="text-xs text-slate-300 max-w-md mx-auto leading-relaxed">
-                Hesabınız və əlaqəli bütün şəxsi məlumatlarınız 7 iş günü ərzində Atesh Studio serverlərindən tamamilə təmizlənəcəkdir. Təsdiq üçün həmçinin <a href={`mailto:ates.baliyev.01@gmail.com?subject=Data%20Deletion%20Request%20-%20${appName}&body=Please%20delete%20my%20account%20for%20${userEmail}`} className="text-amber-400 underline font-bold">buradan birbaşa e-poçt</a> göndərə bilərsiniz.
+                Hesabınız və əlaqəli bütün şəxsi məlumatlarınız 7 iş günü ərzində Atesh Studio serverlərindən tamamilə təmizlənəcəkdir. Təsdiq üçün həmçinin <a href={`mailto:atesbaliyev@gmail.com?subject=Data%20Deletion%20Request%20-%20${appName}&body=Please%20delete%20my%20account%20for%20${userEmail}`} className="text-amber-400 underline font-bold">buradan birbaşa e-poçt</a> göndərə bilərsiniz.
               </p>
               <button
                 type="button"
@@ -256,11 +256,11 @@ export default function DataDeletionPage() {
             </p>
           </div>
           <a
-            href="mailto:ates.baliyev.01@gmail.com?subject=Data%20Deletion%20Help"
+            href="mailto:atesbaliyev@gmail.com?subject=Data%20Deletion%20Help"
             className="flex items-center gap-2 text-xs font-bold px-4 py-2 rounded-xl bg-amber-500/10 text-amber-300 border border-amber-500/30 hover:bg-amber-500/20 transition shrink-0"
           >
             <Mail className="w-4 h-4" />
-            <span>ates.baliyev.01@gmail.com</span>
+            <span>atesbaliyev@gmail.com</span>
           </a>
         </div>
       </div>

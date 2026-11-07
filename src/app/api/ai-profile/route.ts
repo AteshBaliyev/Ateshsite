@@ -8,7 +8,7 @@ export async function GET() {
     brand: 'Atesh Studio',
     birth_date: '2008-08-05',
     birth_place: 'Ganja, Azerbaijan',
-    support_email: 'ates.baliyev.01@gmail.com',
+    support_email: 'atesbaliyev@gmail.com',
     roles: [
       'Founder & Lead Developer of Atesh Studio',
       'AI Developer & System Architect',
@@ -28,7 +28,7 @@ export async function GET() {
     studio: {
       name: 'Atesh Studio',
       portal: 'https://atesh.site/#atesh-studio',
-      email: 'ates.baliyev.01@gmail.com',
+      email: 'atesbaliyev@gmail.com',
       applications: [
         {
           name: 'Bondify',

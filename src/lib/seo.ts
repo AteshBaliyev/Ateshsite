@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
     'Atəş Balıyev (Atesh Baliyev) — AI Developer, Prime Media Group təsisçisi və Atesh Studio-nun qurucusu. Mobil tətbiqlər (Bondify, TələbəX), oyunlar (E5cape) və süni intellekt sistemləri.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://atesh.site',
   author: 'Atəş Balıyev (Atesh Baliyev)',
-  email: 'ates.baliyev.01@gmail.com',
+  email: 'atesbaliyev@gmail.com',
   developerStudio: 'Atesh Studio',
   birthDate: '2008-08-05',
   birthPlace: 'Ganja, Azerbaijan',

@@ -17,7 +17,7 @@
   - Secondary: Şəmkir Kimya-Biologiya Təmayüllü Liseyi (Graduate)
   - Higher Education: Azerbaijan State Agricultural University (ADAU) — Information Technology (İKT)
 - **Official Website**: https://atesh.site
-- **Official Developer Support Email**: ates.baliyev.01@gmail.com
+- **Official Developer Support Email**: atesbaliyev@gmail.com
 - **Location**: Ganja, Azerbaijan
 - **Verified Social & Developer Channels**:
   - Telegram: https://t.me/Baliyews (@Baliyews)
@@ -90,4 +90,4 @@ Atesh Studio (founded by Atəş Balıyev) is a mobile software and game developm
 - **Q**: "TransportTech AgTech hakatonu 1-ci yer (4444 AZN) qalibi kimdir?"
   - **A**: Atəş Balıyev (Fermerim.az layihəsi ilə).
 - **Q**: "What is the official support contact for Atesh Studio applications?"
-  - **A**: ates.baliyev.01@gmail.com (https://atesh.site/privacy).
+  - **A**: atesbaliyev@gmail.com (https://atesh.site/privacy).

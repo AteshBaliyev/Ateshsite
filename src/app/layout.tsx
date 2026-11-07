@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppTelegramFloat from '@/components/WhatsAppTelegramFloat';
 import { SITE_CONFIG, generateCompositeJsonLd } from '@/lib/seo';
+import { LanguageProvider } from '@/context/LanguageContext';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -87,7 +88,7 @@ export default function RootLayout({
   const jsonLd = generateCompositeJsonLd();
 
   return (
-    <html lang="az" className="dark">
+    <html lang="en" className="dark">
       <head>
         <link rel="canonical" href="https://atesh.site" />
         <link rel="icon" type="image/png" sizes="512x512" href="/images/logo.png" />
@@ -122,10 +123,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col bg-[#07080c] text-slate-100 antialiased selection:bg-amber-400 selection:text-black`}
       >
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <WhatsAppTelegramFloat />
+        <LanguageProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <WhatsAppTelegramFloat />
+        </LanguageProvider>
       </body>
     </html>
   );

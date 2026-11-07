@@ -1,7 +1,10 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Post } from '@/types';
 import { BookOpen, Clock, Calendar, ArrowRight, Sparkles, Tag } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface BlogSectionProps {
   posts: Post[];
@@ -9,21 +12,23 @@ interface BlogSectionProps {
 }
 
 export default function BlogSection({ posts, isStandalonePage = false }: BlogSectionProps) {
+  const { t } = useLanguage();
+
   return (
-    <section id="bloq" aria-label="Bloq və Texnoloji Məqalələr" className="py-20 relative bg-[#080a11] border-t border-b border-amber-500/10">
+    <section id="bloq" aria-label="Blog Section" className="py-20 relative bg-[#080a11] border-t border-b border-amber-500/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
               <BookOpen className="w-3.5 h-3.5" />
-              Bilik Bazasının İdarəedilməsi
+              {t.blog.badge}
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-              Bloq & <span className="gold-gradient-text">Texnoloji Məqalələr</span>
+              {t.blog.title}
             </h2>
             <p className="mt-2 text-slate-400 max-w-2xl text-sm sm:text-base">
-              Süni intellekt, sistem düşüncəsi, n8n avtomatlaşdırması və AI SEO haqqında dərinləşdirilmiş mühəndislik qeydləri.
+              {t.blog.subtitle}
             </p>
           </div>
 
@@ -32,7 +37,7 @@ export default function BlogSection({ posts, isStandalonePage = false }: BlogSec
               href="/bloq"
               className="mt-4 md:mt-0 inline-flex items-center gap-1.5 text-xs font-semibold text-amber-400 hover:text-amber-300 transition"
             >
-              <span>Bütün Məqalələrə Bax</span>
+              <span>{t.blog.readArticle}</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           )}

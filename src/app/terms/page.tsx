@@ -143,8 +143,8 @@ export default function TermsOfServicePage() {
               <p><strong className="text-white">Founder:</strong> Atəş Balıyev (Atesh Baliyev)</p>
               <p>
                 <strong className="text-white">Email:</strong>{' '}
-                <a href="mailto:ates.baliyev.01@gmail.com" className="text-amber-400 hover:underline font-bold">
-                  ates.baliyev.01@gmail.com
+                <a href="mailto:atesbaliyev@gmail.com" className="text-amber-400 hover:underline font-bold">
+                  atesbaliyev@gmail.com
                 </a>
               </p>
               <p><strong className="text-white">Location:</strong> Ganja, Azerbaijan</p>
@@ -166,7 +166,7 @@ export default function TermsOfServicePage() {
               Bütün proqram təminatı, dizayn və brend elementləri Atesh Studio və Atəş Balıyevə məxsusdur. İstifadəçilərdən cəmiyyət qaydalarına riayət etmək və xidmətlərdən qanuni məqsədlər üçün istifadə etmək tələb olunur.
             </p>
             <p>
-              Suallarınız və ya rəsmi sorğularınız üçün əlaqə: <strong className="text-amber-300">ates.baliyev.01@gmail.com</strong>.
+              Suallarınız və ya rəsmi sorğularınız üçün əlaqə: <strong className="text-amber-300">atesbaliyev@gmail.com</strong>.
             </p>
           </div>
         </div>

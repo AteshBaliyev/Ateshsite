@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { YouTubeVideo } from '@/types';
 import { Play, ExternalLink, X, Eye, Calendar, Sparkles } from 'lucide-react';
 import { YouTubeIcon } from '@/components/Icons';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface YouTubeSectionProps {
   videos: YouTubeVideo[];
@@ -13,26 +14,27 @@ interface YouTubeSectionProps {
 export default function YouTubeSection({ videos }: YouTubeSectionProps) {
   const [selectedChannel, setSelectedChannel] = useState<string>('All');
   const [activeVideo, setActiveVideo] = useState<YouTubeVideo | null>(null);
+  const { t } = useLanguage();
 
   const filteredVideos = selectedChannel === 'All'
     ? videos
     : videos.filter((v) => v.channelName === selectedChannel);
 
   return (
-    <section id="youtube" aria-label="Videolarım və YouTube Kanalları" className="py-20 relative bg-[#090b14] border-t border-b border-amber-500/10">
+    <section id="youtube" aria-label="Videos Section" className="py-20 relative bg-[#090b14] border-t border-b border-amber-500/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-500/10 border border-red-500/25 text-red-400 text-xs font-semibold uppercase tracking-wider mb-3">
               <YouTubeIcon className="w-3.5 h-3.5" />
-              YouTube Video İnteqrasiyası
+              {t.youtube.badge}
             </div>
             <h2 className="text-3xl sm:text-5xl font-black text-white">
-              Videolarım
+              {t.youtube.title}
             </h2>
             <p className="mt-2 text-slate-400 max-w-2xl text-sm sm:text-base">
-              Rəsmi <strong className="text-amber-300">@thebaliyev</strong> YouTube kanalımdan robotexnika, süni intellekt, mürəkkəb sistemlər və rəqəmsal satış haqqında videolar.
+              {t.youtube.subtitle}
             </p>
           </div>
 
@@ -46,7 +48,7 @@ export default function YouTubeSection({ videos }: YouTubeSectionProps) {
                   : 'text-slate-400 hover:text-white hover:bg-slate-800/50'
               }`}
             >
-              Bütün Videolar
+              {t.projects.all}
             </button>
             <button
               onClick={() => setSelectedChannel('@thebaliyev')}
