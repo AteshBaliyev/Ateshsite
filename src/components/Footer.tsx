@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { MessageSquare, Send, Shield, FileText, Bot } from 'lucide-react';
+import { MessageSquare, Send, ShieldCheck, FileText, Smartphone, Mail } from 'lucide-react';
 import { YouTubeIcon, InstagramIcon } from '@/components/Icons';
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className="w-full h-full bg-[#07080d] rounded-[10px] overflow-hidden flex items-center justify-center p-1">
                   <Image
                     src="/images/logo.png"
-                    alt="ATESH SITE Logo"
+                    alt="Atesh Studio Logo"
                     width={40}
                     height={40}
                     className="w-full h-full object-contain"
@@ -24,13 +24,24 @@ export default function Footer() {
               </div>
               <div>
                 <span className="font-bold text-lg text-white">Atəş Balıyev</span>
-                <p className="text-[11px] text-amber-400/80 font-medium">Atesh Site • Prime Media Group</p>
+                <p className="text-[11px] text-amber-400/80 font-medium">Atesh Studio • Prime Media Group</p>
               </div>
             </Link>
 
             <p className="text-xs sm:text-sm text-slate-400 max-w-md leading-relaxed">
-              İKT tələbəsi, Prime Media Group rəhbəri və süni intellekt sistemləri quran AI Developer. SAF 2025 Qızıl Medal, Bondify, Fermerim.az və TransportTech hakaton qalibi.
+              AI Developer, Atesh Studio qurucusu və Prime Media Group rəhbəri. Google Play mobil tətbiqləri (Bondify, TələbəX), oyunlar (E5cape), SAF 2025 Qızıl Medal və TransportTech hakaton qalibi.
             </p>
+
+            <div className="flex items-center gap-2 pt-1 text-xs text-slate-300">
+              <Mail className="w-3.5 h-3.5 text-amber-400" />
+              <span>Official Developer Contact:</span>
+              <a
+                href="mailto:ates.baliyev.01@gmail.com"
+                className="text-amber-400 hover:text-amber-300 font-semibold transition underline underline-offset-2"
+              >
+                ates.baliyev.01@gmail.com
+              </a>
+            </div>
 
             <div className="flex items-center gap-3 pt-2">
               {/* Instagram */}
@@ -89,6 +100,10 @@ export default function Footer() {
               Naviqasiya
             </h4>
             <nav className="flex flex-col space-y-2.5 text-xs">
+              <Link href="/#atesh-studio" prefetch={true} className="text-amber-300 hover:text-amber-200 transition font-medium flex items-center gap-1.5">
+                <Smartphone className="w-3.5 h-3.5" />
+                <span>Atesh Studio (Apps & Games)</span>
+              </Link>
               <Link href="/#haqqimda" prefetch={true} className="hover:text-amber-400 transition">
                 Mənim Haqqımda
               </Link>
@@ -96,7 +111,7 @@ export default function Footer() {
                 Layihələr & Uğurlar
               </Link>
               <Link href="/#youtube" prefetch={true} className="hover:text-amber-400 transition">
-                Videolarım
+                Videolarım (@thebaliyev)
               </Link>
               <Link href="/bloq" prefetch={true} className="hover:text-amber-400 transition">
                 Bloq & Texnoloji Məqalələr
@@ -107,39 +122,62 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* AI & SEO Protocols */}
+          {/* Legal & Google Play Compliance */}
           <div>
             <h4 className="text-white text-xs font-bold uppercase tracking-wider mb-4 flex items-center gap-1.5">
-              <Bot className="w-3.5 h-3.5 text-amber-400" />
-              AI SEO & İndekslənmə
+              <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
+              Hüquqi & Google Play
             </h4>
-            <div className="flex flex-col space-y-2 text-xs">
-              <Link href="/llms.txt" target="_blank" className="hover:text-amber-400 transition flex items-center gap-1.5">
-                <FileText className="w-3.5 h-3.5 text-amber-400" />
-                <span>/llms.txt (Perplexity & GPT)</span>
+            <div className="flex flex-col space-y-2.5 text-xs">
+              <Link
+                href="/privacy"
+                prefetch={true}
+                className="hover:text-amber-400 transition font-medium text-slate-300"
+              >
+                Privacy Policy (Məxfilik Siyasəti)
               </Link>
-              <Link href="/sitemap.xml" target="_blank" className="hover:text-amber-400 transition flex items-center gap-1.5">
-                <FileText className="w-3.5 h-3.5 text-amber-400" />
-                <span>/sitemap.xml</span>
+              <Link
+                href="/terms"
+                prefetch={true}
+                className="hover:text-amber-400 transition font-medium text-slate-300"
+              >
+                Terms of Service (İstifadə Şərtləri)
               </Link>
-              <Link href="/robots.txt" target="_blank" className="hover:text-amber-400 transition flex items-center gap-1.5">
-                <FileText className="w-3.5 h-3.5 text-amber-400" />
-                <span>/robots.txt</span>
+              <Link
+                href="/data-deletion"
+                prefetch={true}
+                className="hover:text-amber-400 transition font-medium text-slate-300"
+              >
+                Data Deletion (Məlumatların Silinməsi)
               </Link>
-              <Link href="/admin" className="hover:text-amber-400 transition flex items-center gap-1.5 pt-2">
-                <Shield className="w-3.5 h-3.5 text-amber-400" />
-                <span>Admin İdarəetmə Paneli</span>
-              </Link>
+              <div className="pt-2 border-t border-slate-900 flex flex-col space-y-1.5 text-[11px] text-slate-400">
+                <Link href="/llms.txt" target="_blank" className="hover:text-amber-400 transition flex items-center gap-1">
+                  <FileText className="w-3 h-3 text-amber-400" />
+                  <span>/llms.txt (AI Knowledge Base)</span>
+                </Link>
+                <Link href="/app-ads.txt" target="_blank" className="hover:text-amber-400 transition flex items-center gap-1">
+                  <FileText className="w-3 h-3 text-amber-400" />
+                  <span>/app-ads.txt (AdMob Verification)</span>
+                </Link>
+                <Link href="/sitemap.xml" target="_blank" className="hover:text-amber-400 transition flex items-center gap-1">
+                  <FileText className="w-3 h-3 text-amber-400" />
+                  <span>/sitemap.xml</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© 2026 Atəş Balıyev. Bütün hüquqlar qorunur. Prime Media Group.</p>
-          <p className="flex items-center gap-1 text-slate-500">
-            <span>Next.js 16 App Router & Tailwind CSS ilə hazırlanıb</span>
-          </p>
+          <p>© 2026 Atəş Balıyev (Atesh Baliyev). Bütün hüquqlar qorunur. Atesh Studio & Prime Media Group.</p>
+          <div className="flex items-center gap-4 text-[11px]">
+            <Link href="/privacy" className="hover:text-amber-400 transition">Privacy Policy</Link>
+            <span>•</span>
+            <Link href="/terms" className="hover:text-amber-400 transition">Terms of Service</Link>
+            <span>•</span>
+            <Link href="/data-deletion" className="hover:text-amber-400 transition">Data Safety</Link>
+          </div>
         </div>
       </div>
     </footer>

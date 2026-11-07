@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react';
 
 const SUBTITLES = [
+  'Atesh Studio Qurucusuyam.',
   'Süni İntellektlə Sistemlər Qururam.',
   'Prime Media Group Rəhbəriyəm.',
   'SAF 2025 Qızıl Medalçısıyam.',
-  'Avtonom AI Sistemləri İnşa Edirəm.',
+  'Mobil Tətbiq & Oyunlar İnşa Edirəm.',
 ];
 
 export default function TypewriterHeadline() {

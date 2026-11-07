@@ -17,7 +17,7 @@ export default function Hero() {
 
           {/* Sub-headline */}
           <p className="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl">
-            İKT tələbəsi, <strong className="text-amber-300 font-semibold">Prime Media Group</strong> rəhbəri və mürəkkəb biznes proseslərini intellektual alqoritmlər, avtonom AI agentləri və modern veb arxitekturası ilə avtomatlaşdıran proqram mühəndisiyəm.
+            İKT tələbəsi, <strong className="text-amber-300 font-semibold">Atesh Studio</strong> qurucusu, <strong className="text-white font-semibold">Prime Media Group</strong> rəhbəri və mürəkkəb sistemləri intellektual alqoritmlər, avtonom AI agentləri və modern mobil/veb arxitekturası ilə inşa edən proqram mühəndisiyəm.
           </p>
 
           {/* Prestigious Accolades Badges */}
@@ -34,12 +34,22 @@ export default function Hero() {
 
             <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-[#0f121d] border border-amber-500/20 text-xs text-slate-200">
               <Bot className="w-4 h-4 text-amber-400" />
-              <span>Bondify & Electrolify Qurucusu</span>
+              <span>Atesh Studio & Bondify Qurucusu</span>
             </div>
           </div>
 
           {/* Primary Action Buttons */}
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3 w-full">
+            {/* Atesh Studio CTA */}
+            <Link
+              href="/#atesh-studio"
+              prefetch={true}
+              className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-xs sm:text-sm text-black bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 shadow-[0_6px_25px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_35px_rgba(212,175,55,0.6)] hover:-translate-y-0.5 transition-all"
+            >
+              <span>Atesh Studio (Apps & Games)</span>
+              <ArrowRight className="w-4 h-4 text-black" />
+            </Link>
+
             {/* WhatsApp CTA */}
             <a
               href="https://wa.me/994556422545"
@@ -73,18 +83,8 @@ export default function Hero() {
               className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm bg-gradient-to-r from-pink-600 via-rose-500 to-amber-500 text-white shadow-[0_6px_25px_rgba(244,63,94,0.3)] hover:shadow-[0_8px_35px_rgba(244,63,94,0.5)] hover:-translate-y-0.5 transition-all"
             >
               <InstagramIcon className="w-4 h-4" />
-              <span>Instagram: @atesh_baliyev</span>
+              <span>Instagram</span>
             </a>
-
-            {/* Projects Link */}
-            <Link
-              href="/#layiheler"
-              prefetch={true}
-              className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-semibold text-xs sm:text-sm text-amber-300 bg-[#0f121e] border border-amber-500/30 hover:bg-amber-500/15 hover:border-amber-400 transition-all"
-            >
-              <span>Layihələri Kəşf Et</span>
-              <ArrowRight className="w-4 h-4 text-amber-400" />
-            </Link>
           </div>
 
           {/* Key Competence Metrics Grid */}

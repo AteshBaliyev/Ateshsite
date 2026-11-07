@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, MessageSquare, Send, Sparkles, Shield } from 'lucide-react';
+import { Menu, X, MessageSquare, Send, Sparkles } from 'lucide-react';
 import { InstagramIcon } from '@/components/Icons';
 
 export default function Navbar() {
@@ -19,7 +19,7 @@ export default function Navbar() {
               <div className="w-full h-full bg-[#07080d] rounded-[10px] overflow-hidden flex items-center justify-center p-1">
                 <Image
                   src="/images/logo.png"
-                  alt="ATESH SITE Rəsmi Logo"
+                  alt="Atesh Studio Rəsmi Logo"
                   width={44}
                   height={44}
                   priority
@@ -32,7 +32,7 @@ export default function Navbar() {
                 <span>Atəş Balıyev</span>
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
               </div>
-              <p className="text-xs text-amber-400/90 font-medium">Atesh Site • AI Developer</p>
+              <p className="text-xs text-amber-400/90 font-medium">Atesh Studio • AI Systems</p>
             </div>
           </Link>
 
@@ -44,6 +44,13 @@ export default function Navbar() {
               className="px-3.5 py-2 rounded-lg hover:text-amber-400 hover:bg-amber-500/10 transition"
             >
               Ana Səhifə
+            </Link>
+            <Link
+              href="/#atesh-studio"
+              prefetch={true}
+              className="px-3.5 py-2 rounded-lg text-amber-300 hover:text-amber-200 hover:bg-amber-500/15 transition font-semibold"
+            >
+              Atesh Studio
             </Link>
             <Link
               href="/#haqqimda"
@@ -82,7 +89,7 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          {/* Social CTAs & Admin */}
+          {/* Social CTAs (NO admin link in public header) */}
           <div className="hidden lg:flex items-center space-x-2.5">
             <a
               href="https://instagram.com/atesh_baliyev?igsh=MXNseDRyeGNwZzZpNw=="
@@ -117,26 +124,10 @@ export default function Navbar() {
               <Send className="w-3.5 h-3.5" />
               <span>Telegram</span>
             </a>
-
-            <Link
-              href="/admin"
-              prefetch={false}
-              className="flex items-center gap-1.5 p-2 text-xs font-medium text-amber-300/80 hover:text-amber-300 bg-amber-500/10 border border-amber-500/20 rounded-lg hover:bg-amber-500/20 transition"
-              title="Admin İdarəetmə Paneli"
-            >
-              <Shield className="w-4 h-4" />
-            </Link>
           </div>
 
-          {/* Mobile menu trigger */}
+          {/* Mobile menu trigger (No admin icon) */}
           <div className="flex md:hidden items-center space-x-2">
-            <Link
-              href="/admin"
-              className="p-2 text-amber-400 bg-amber-500/10 border border-amber-500/20 rounded-lg"
-              title="Admin Panel"
-            >
-              <Shield className="w-4 h-4" />
-            </Link>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Naviqasiya menyusunu aç"
@@ -158,6 +149,13 @@ export default function Navbar() {
               className="px-3 py-2.5 rounded-lg text-slate-200 hover:bg-amber-500/15 hover:text-amber-400 transition"
             >
               Ana Səhifə
+            </Link>
+            <Link
+              href="/#atesh-studio"
+              onClick={() => setMobileMenuOpen(false)}
+              className="px-3 py-2.5 rounded-lg text-amber-300 font-bold hover:bg-amber-500/15 hover:text-amber-200 transition"
+            >
+              Atesh Studio
             </Link>
             <Link
               href="/#haqqimda"

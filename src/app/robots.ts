@@ -2,11 +2,22 @@ import { MetadataRoute } from 'next';
 import { SITE_CONFIG } from '@/lib/seo';
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = SITE_CONFIG.url;
+
   return {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
+        allow: [
+          '/',
+          '/privacy',
+          '/terms',
+          '/data-deletion',
+          '/llms.txt',
+          '/app-ads.txt',
+          '/bloq',
+          '/projects',
+        ],
         disallow: ['/admin', '/api/admin', '/api/webhook'],
       },
       {
@@ -22,11 +33,20 @@ export default function robots(): MetadataRoute.Robots {
           'Omgilibot',
           'FacebookBot',
         ],
-        allow: '/',
+        allow: [
+          '/',
+          '/privacy',
+          '/terms',
+          '/data-deletion',
+          '/llms.txt',
+          '/app-ads.txt',
+          '/bloq',
+          '/projects',
+        ],
         disallow: ['/admin', '/api/admin'],
       },
     ],
-    sitemap: `${SITE_CONFIG.url}/sitemap.xml`,
-    host: SITE_CONFIG.url,
+    sitemap: `${baseUrl}/sitemap.xml`,
+    host: baseUrl,
   };
 }

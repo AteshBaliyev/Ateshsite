@@ -1,13 +1,16 @@
 import { Post, Project } from '@/types';
 
 export const SITE_CONFIG = {
-  name: 'Atəş Balıyev | AI Developer, Media Rəhbəri & Texnologiya Sahibkarı',
-  shortName: 'Atəş Balıyev',
-  description: 'Atəş Balıyev (d. 5 avqust 2008, Gəncə) — Vibe Coding, süni intellekt agentləri və avtomatlaşdırma üzrə AI Developer, Prime Media Group rəhbəri (300K+ izləyici) və texnologiya sahibkarı. SAF 2025 VEX V5 Qızıl Medalı, TransportTech (4444 AZN) hakaton qalibi.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-  author: 'Atəş Balıyev',
+  name: 'Atəş Balıyev (Atesh Baliyev) | Atesh Studio & AI Developer',
+  shortName: 'Atəş Balıyev (Atesh Baliyev)',
+  description:
+    'Atəş Balıyev (Atesh Baliyev) — AI Developer, Prime Media Group təsisçisi və Atesh Studio-nun qurucusu. Mobil tətbiqlər (Bondify, TələbəX), oyunlar (E5cape) və süni intellekt sistemləri.',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://atesh.site',
+  author: 'Atəş Balıyev (Atesh Baliyev)',
+  email: 'ates.baliyev.01@gmail.com',
+  developerStudio: 'Atesh Studio',
   birthDate: '2008-08-05',
-  birthPlace: 'Gəncə, Azərbaycan',
+  birthPlace: 'Ganja, Azerbaijan',
   education: [
     'Şəmkir Kimya-Biologiya Təmayüllü Liseyi',
     'Azərbaycan Dövlət Aqrar Universiteti (ADAU) — İnformasiya Texnologiyaları (İKT)',
@@ -24,107 +27,143 @@ export const SITE_CONFIG = {
   keywords: [
     'Atəş Balıyev',
     'Atesh Baliyev',
-    'Baliyews',
-    'AI Developer Azərbaycan',
-    'Vibe Coding Azərbaycan',
+    'Atesh Studio',
+    'AI Developer',
+    'Mobile App Developer',
+    'Google Play Developer Atesh Studio',
+    'Bondify',
+    'E5cape',
+    'TələbəX',
     'Prime Media Group',
-    'Texnologiya Sahibkarı',
+    'Vibe Coding',
     'SAF 2025 VEX V5 Robotexnika Qızıl Medal',
     'TransportTech Hakaton Qalibi',
-    'Bondify Telegram Mini App',
     'Fermerim.az',
     'AiXəbər',
-    'Pinaqro',
-    'Mənim Heyvanım',
-    'Electrolify.com',
-    'Trendim.store',
-    'Baliyews Studio',
     'GET RICH OR RESET',
     'Laser Grid',
-    'Self-Leadership 21 Days to Reclaim Your Discipline',
-    'n8n avtomatlaşdırma',
-    'Kibertəhlükəsizlik Kali Linux Burp Suite',
-    'ADAU İKT tələbəsi',
+    'AppSec Architecture',
+    'Full-Stack Developer Azerbaijan',
+    'ADAU İKT',
   ],
 };
 
-export function generatePersonJsonLd() {
+/**
+ * Unified JSON-LD Knowledge Graph combining Person, Atesh Studio, Prime Media Group, and WebSite
+ */
+export function generateCompositeJsonLd() {
+  const baseUrl = SITE_CONFIG.url;
   return {
     '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: 'Atəş Balıyev',
-    alternateName: ['Atesh Baliyev', 'Baliyews'],
-    birthDate: '2008-08-05',
-    birthPlace: {
-      '@type': 'Place',
-      name: 'Gəncə, Azərbaycan',
-    },
-    nationality: 'Azerbaijani',
-    jobTitle: [
-      'AI Developer',
-      'Media Rəhbəri',
-      'Texnologiya Sahibkarı',
-      'Vibe Coder & Sistem Memarı',
-    ],
-    image: `${SITE_CONFIG.url}/images/atesh-baliyev.png`,
-    worksFor: [
+    '@graph': [
+      {
+        '@type': 'Person',
+        '@id': `${baseUrl}/#person`,
+        name: 'Atəş Balıyev',
+        alternateName: ['Atesh Baliyev', 'Baliyews'],
+        birthDate: '2008-08-05',
+        birthPlace: {
+          '@type': 'Place',
+          name: 'Ganja, Azerbaijan',
+        },
+        nationality: 'Azerbaijani',
+        jobTitle: 'AI Developer & Founder of Atesh Studio',
+        email: SITE_CONFIG.email,
+        url: baseUrl,
+        image: `${baseUrl}/images/atesh-baliyev.png`,
+        sameAs: [
+          SITE_CONFIG.telegram,
+          SITE_CONFIG.whatsapp,
+          SITE_CONFIG.instagram,
+          SITE_CONFIG.youtube,
+          ...SITE_CONFIG.channels.map((c) => c.url),
+        ],
+        alumniOf: [
+          {
+            '@type': 'CollegeOrUniversity',
+            name: 'Azərbaycan Dövlət Aqrar Universiteti (ADAU)',
+            department: 'İnformasiya Texnologiyaları (İKT)',
+          },
+          {
+            '@type': 'EducationalOrganization',
+            name: 'Şəmkir Kimya-Biologiya Təmayüllü Liseyi',
+          },
+        ],
+        worksFor: [
+          {
+            '@type': 'Organization',
+            '@id': `${baseUrl}/#atesh-studio`,
+            name: 'Atesh Studio',
+          },
+          {
+            '@type': 'Organization',
+            '@id': `${baseUrl}/#prime-media-group`,
+            name: 'Prime Media Group',
+          },
+        ],
+        knowsAbout: [
+          'Mobile Application Development (Android, React Native, Flutter, Expo)',
+          'Mobile Game Development (Godot, Three.js, C#)',
+          'Artificial Intelligence & Autonomous AI Agents',
+          'Application Security Architecture (AppSec) & Data Protection',
+          'Vibe Coding & Rapid Prototyping',
+          'VEX V5 Robotics & Autonomous Engineering',
+          'Full-Stack Web Architecture (Next.js 16, TypeScript, Node.js)',
+          'Telegram Mini Apps (Bondify)',
+        ],
+        award: [
+          'SAF 2025 VEX V5 Robotexnika Çempionatı - 1-ci Yer & Qızıl Medal (Zeta Team)',
+          'TransportTech AgTech Hakatonu 2026 - 1-ci Yer Qalibi (4444 AZN)',
+          'ADAU Düşün Və Yarat Hakatonu 2026 - 2-ci Yer Tələbə Komandası Mentorluğu',
+        ],
+      },
       {
         '@type': 'Organization',
+        '@id': `${baseUrl}/#atesh-studio`,
+        name: 'Atesh Studio',
+        alternateName: 'Atesh Games & Mobile Studio',
+        url: `${baseUrl}/#atesh-studio`,
+        logo: `${baseUrl}/images/logo.png`,
+        email: SITE_CONFIG.email,
+        founder: {
+          '@id': `${baseUrl}/#person`,
+        },
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Ganja',
+          addressCountry: 'Azerbaijan',
+        },
+        description:
+          'Mobile application and game development studio founded by Atesh Baliyev. Official developer portal for Google Play Store applications including Bondify, E5cape, and TələbəX.',
+      },
+      {
+        '@type': 'Organization',
+        '@id': `${baseUrl}/#prime-media-group`,
         name: 'Prime Media Group',
-        description: '50-dən çox WhatsApp kanalı və 300.000-dən çox izləyici bazasına malik rəqəmsal media şəbəkəsi',
-        logo: `${SITE_CONFIG.url}/images/logo.png`,
+        url: baseUrl,
+        founder: {
+          '@id': `${baseUrl}/#person`,
+        },
+        description:
+          '50-dən çox WhatsApp kanalı və 300.000-dən artıq izləyici bazasına malik rəqəmsal media şəbəkəsi.',
       },
       {
-        '@type': 'Organization',
-        name: 'Baliyews Studio',
-        description: 'Mobil oyun inkişafı studiyası (GET RICH OR RESET, Laser Grid)',
+        '@type': 'WebSite',
+        '@id': `${baseUrl}/#website`,
+        url: baseUrl,
+        name: SITE_CONFIG.name,
+        description: SITE_CONFIG.description,
+        publisher: {
+          '@id': `${baseUrl}/#person`,
+        },
+        inLanguage: ['az', 'en'],
       },
     ],
-    alumniOf: [
-      {
-        '@type': 'EducationalOrganization',
-        name: 'Şəmkir Kimya-Biologiya Təmayüllü Liseyi',
-      },
-      {
-        '@type': 'CollegeOrUniversity',
-        name: 'Azərbaycan Dövlət Aqrar Universiteti (ADAU)',
-        department: 'İnformasiya Texnologiyaları (İKT)',
-      },
-    ],
-    description:
-      'Atəş Balıyev (d. 5 avqust 2008, Gəncə) — Azərbaycanda Vibe Coding, süni intellekt əsaslı agentlər və qlobal rəqəmsal layihələr quran AI Developer və texnologiya sahibkarı. SAF 2025 VEX V5 Robotexnika Çempionatının Qızıl Medalçısı, TransportTech AgTech Hakatonu qalibi (4444 AZN), Prime Media Group rəhbəri (300K+ izləyici), Bondify, Fermerim.az və "Self-Leadership" kitabının müəllifi.',
-    url: SITE_CONFIG.url,
-    sameAs: [
-      SITE_CONFIG.telegram,
-      SITE_CONFIG.whatsapp,
-      SITE_CONFIG.instagram,
-      SITE_CONFIG.youtube,
-      ...SITE_CONFIG.channels.map((c) => c.url),
-    ],
-    knowsAbout: [
-      'Artificial Intelligence & AI Agents',
-      'Vibe Coding & Rapid Prototyping',
-      'n8n Workflow Automation',
-      'Full-Stack Web Architecture (Next.js, TypeScript)',
-      'VEX V5 Robotics & Engineering',
-      'Telegram Mini Apps (Bondify)',
-      'White-Hat Cybersecurity (Kali Linux, Burp Suite, Nmap, Metasploit)',
-      'AgTech & Agriculture Artificial Intelligence (Fermerim.az, Pinaqro)',
-      '3D Modeling & UI Design (Blender, Figma)',
-      'E-commerce & Storefront Management (Electrolify.com, Trendim.store)',
-      'Personal Discipline, Psychology & Calisthenics',
-    ],
-    award: [
-      'SAF 2025 VEX V5 Robotexnika Çempionatı - 1-ci Yer & Qızıl Medal (Zeta Team)',
-      'TransportTech AgTech Hakatonu 2026 - 1-ci Yer Qalibi (4444 AZN)',
-      'ADAU Düşün Və Yarat Hakatonu 2026 - 2-ci Yer Tələbə Komandası Mentorluğu',
-    ],
-    hasOccupation: {
-      '@type': 'Occupation',
-      name: 'AI Developer & Technology Entrepreneur',
-      skills: 'Vibe Coding, AI Agents, n8n Automation, Cyber Security, Full-Stack Architecture',
-    },
   };
+}
+
+export function generatePersonJsonLd() {
+  return generateCompositeJsonLd();
 }
 
 export function generateWebSiteJsonLd() {
@@ -182,7 +221,7 @@ export function generateProjectJsonLd(project: Project) {
       '@type': 'Person',
       name: 'Atəş Balıyev',
     },
-    operatingSystem: 'Web, Cross-platform, Telegram Mini App',
+    operatingSystem: 'Android, Web, Cross-platform',
   };
 }
 

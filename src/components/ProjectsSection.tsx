@@ -33,20 +33,20 @@ export default function ProjectsSection({ projects, isStandalonePage = false }: 
   });
 
   return (
-    <section id="layiheler" aria-label="Layihələr və Nailiyyətlər" className="py-20 relative">
+    <section id="layiheler" aria-label="AI Sistemləri və Veb Ekosistemlər" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
               <Layers className="w-3.5 h-3.5" />
-              İnnovasiya Portfeli
+              AI Sistemləri və Veb Ekosistemlər
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-              Layihələr və <span className="gold-gradient-text">Uğurlar</span>
+              Veb Platformaları, Hakatonlar və <span className="gold-gradient-text">Nailiyyətlər</span>
             </h2>
             <p className="mt-2 text-slate-400 max-w-2xl text-sm sm:text-base">
-              Robotexnika çempionatları, rəqəmsal sosial platformalar, e-ticarət vitrinləri və kənd təsərrüfatı innovasiyaları.
+              Fermerim.az (AgTech), SAF 2025 VEX V5 Qızıl Medal, TransportTech (4444 AZN), AiXəbər və qlobal e-ticarət vitrinləri.
             </p>
           </div>
 
