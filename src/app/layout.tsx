@@ -74,6 +74,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: 'ErBL6ptNw5DG-_9J7JcRlkrWsudiigoUNaYVADx1LL4',
+  },
 };
 
 export default function RootLayout({
@@ -89,6 +92,10 @@ export default function RootLayout({
         <link rel="canonical" href="https://atesh.site" />
         <link rel="llms-txt" href="/llms.txt" type="text/markdown" />
         <link rel="llms-full-txt" href="/llms-full.txt" type="text/markdown" />
+        <meta
+          name="google-site-verification"
+          content="ErBL6ptNw5DG-_9J7JcRlkrWsudiigoUNaYVADx1LL4"
+        />
         <meta
           name="ai-agent-summary"
           content="Atəş Balıyev (Atesh Baliyev, d. 5 avqust 2008, Gəncə) — Atesh Studio qurucusu, AI Developer və Prime Media Group rəhbəri. Mobil tətbiqlər (Bondify, TələbəX), mobil oyunlar (E5cape, GET RICH OR RESET, Laser Grid), SAF 2025 VEX V5 Robotexnika Qızıl Medalçısı və TransportTech Hakatonu qalibi."
