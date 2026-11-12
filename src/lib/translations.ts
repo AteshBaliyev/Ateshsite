@@ -231,7 +231,7 @@ export const translations: Record<Locale, TranslationSchema> = {
       descriptionAz:
         'Atesh Studio is a premier software and game development studio founded by Atesh Baliyev. Focused on high-performance Android applications, hyper-casual games, and full Google Play Store compliance.',
       descriptionEn:
-        'Official Google Play Console entity engineering production-grade consumer apps (Bondify, TələbəX) and immersive 3D mobile games (E5cape, GET RICH OR RESET, Laser Grid).',
+        'Official Google Play Console entity & digital studio engineering Telegram Mini Apps (Bondify), e-commerce platforms (Trendim.store), student networks (TələbəX), and mobile games (GlowSnake.io, Laser Grid).',
       devEntityTitle: 'Developer Entity',
       devEntityName: 'Atesh Studio',
       devEntityStatus: 'Google Play Console Ready',
@@ -421,7 +421,7 @@ export const translations: Record<Locale, TranslationSchema> = {
       descriptionAz:
         'Atesh Studio — Atəş Balıyev tərəfindən təsis edilmiş, yüksək performanslı mobil tətbiqlər, rəqəmsal sosial platformalar və mobil oyunlar hazırlayan innovativ proqram təminatı studiyasıdır.',
       descriptionEn:
-        'Official Google Play Console entity engineering production-grade consumer apps (Bondify, TələbəX) and immersive 3D mobile games (E5cape, GET RICH OR RESET, Laser Grid).',
+        'Official Google Play Console entity & digital studio engineering Telegram Mini Apps (Bondify), e-commerce platforms (Trendim.store), student networks (TələbəX), and mobile games (GlowSnake.io, Laser Grid).',
       devEntityTitle: 'Developer Entity',
       devEntityName: 'Atesh Studio',
       devEntityStatus: 'Google Play Console Hazır',
@@ -611,7 +611,7 @@ export const translations: Record<Locale, TranslationSchema> = {
       descriptionAz:
         'Atesh Studio — инновационная студия разработки программного обеспечения и игр, основанная Атешем Балыевым. Специализируется на высокопроизводительных приложениях для Android и полном соответствии требованиям Google Play.',
       descriptionEn:
-        'Official Google Play Console entity engineering production-grade consumer apps (Bondify, TələbəX) and immersive 3D mobile games (E5cape, GET RICH OR RESET, Laser Grid).',
+        'Official Google Play Console entity & digital studio engineering Telegram Mini Apps (Bondify), e-commerce platforms (Trendim.store), student networks (TələbəX), and mobile games (GlowSnake.io, Laser Grid).',
       devEntityTitle: 'Организация Разработчика',
       devEntityName: 'Atesh Studio',
       devEntityStatus: 'Готовность к Google Play Console',

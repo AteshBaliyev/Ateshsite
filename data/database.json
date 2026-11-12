@@ -124,19 +124,19 @@
     {
       "id": "2",
       "slug": "bondify-social-platform",
-      "title": "Bondify - Telegram Mini App və Veb Platforma",
-      "tagline": "Bondify - Rəqəmsal Sosial Platforma",
-      "description": "Real vaxt rejimində işləyən sosial kəşf platforması. Tətbiq həm veb, həm də Telegram Mini App kimi fəaliyyət göstərir. Xüsusi coin iqtisadiyyatı, Telegram Stars və dual age modes inteqrasiyası.",
-      "fullDetails": "Bondify (Bondify.az / @BondifyAppBot) real vaxt rejimində işləyən sosial kəşf platformasıdır. Tətbiq həm veb, həm də Telegram Mini App kimi fəaliyyət göstərir. Platformaya xüsusi coin iqtisadiyyatı, Telegram Stars inteqrasiyası və Adsgram vasitəsilə mükafatlandırılmış reklam (rewarded ads) sistemləri qurmuşam. Həmçinin, istifadəçi təhlükəsizliyini təmin etmək üçün tətbiqdə ikili yaş rejimi (dual age modes) mövcuddur.\n\n### Platformanın Əsas Funksionallıqları:\n- **Telegram Mini App & Web Sync**: TMA SDK ilə Telegram sessiyasının dərhal avtorizasiyası və veb brauzerlə sinxronlaşdırılmış profillər.\n- **Daxili İqtisadiyyat & Telegram Stars**: İstifadəçilərin qarşılıqlı əlaqəsi üçün rəqəmsal coin sistemi və Telegram Stars ilə rəsmi ödəniş axını.\n- **Adsgram Mükafatlandırma Sistemi**: İstifadəçilərin tətbiqdaxili fəallığını stimullaşdıran rewarded video modulları.\n- **İkili Yaş Rejimi (Dual Age Modes)**: Təhlükəsizliyi qorumaq məqsədilə fərqli yaş qrupları üçün tamamilə təcrid olunmuş və qorunan mühit.",
-      "category": "Sosial Platforma & TMA",
+      "title": "Bondify - Telegram Mini App (@BondifyAppBot)",
+      "tagline": "Bondify - Telegram Mini App Sosial Kəşf Platforması",
+      "description": "Real vaxt rejimində işləyən Telegram Mini App sosial kəşf platforması. Xüsusi coin iqtisadiyyatı, Telegram Stars, Adsgram və dual age modes inteqrasiyası.",
+      "fullDetails": "Bondify (@BondifyAppBot) Telegram daxilində real vaxt rejimində işləyən sosial kəşf platformasıdır (Telegram Mini App). Platformaya xüsusi coin iqtisadiyyatı, Telegram Stars inteqrasiyası və Adsgram vasitəsilə mükafatlandırılmış reklam (rewarded ads) sistemləri qurmuşam. Həmçinin, istifadəçi təhlükəsizliyini təmin etmək üçün tətbiqdə ikili yaş rejimi (dual age modes) mövcuddur.\n\n### Platformanın Əsas Funksionallıqları:\n- **Telegram Mini App (TMA)**: TMA SDK ilə Telegram sessiyasının dərhal avtorizasiyası və anlıq kəşf interfeysi.\n- **Daxili İqtisadiyyat & Telegram Stars**: İstifadəçilərin qarşılıqlı əlaqəsi üçün rəqəmsal coin sistemi və Telegram Stars ilə rəsmi ödəniş axını.\n- **Adsgram Mükafatlandırma Sistemi**: İstifadəçilərin tətbiqdaxili fəallığını stimullaşdıran rewarded video modulları.\n- **İkili Yaş Rejimi (Dual Age Modes)**: Təhlükəsizliyi qorumaq məqsədilə fərqli yaş qrupları üçün tamamilə təcrid olunmuş və qorunan mühit.",
+      "category": "Telegram Mini App",
       "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
-      "liveUrl": "https://bondify.az",
+      "liveUrl": "https://t.me/BondifyAppBot",
       "githubUrl": "https://t.me/BondifyAppBot",
       "achievements": "Telegram Stars, Coin İqtisadiyyatı & Adsgram",
       "metrics": [
         {
-          "label": "Ekosistem",
-          "value": "Web + TMA"
+          "label": "Platforma",
+          "value": "Telegram Mini App"
         },
         {
           "label": "İnteqrasiya",

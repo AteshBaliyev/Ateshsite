@@ -9,9 +9,10 @@ import {
   UserCheck,
   ShieldCheck,
   ExternalLink,
-  Sparkles,
   Layers,
   CheckCircle2,
+  ShoppingBag,
+  Send,
 } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -28,7 +29,7 @@ interface StudioApp {
     az: string;
     ru: string;
   };
-  iconType: 'social' | 'game' | 'campus' | 'arcade';
+  iconType: 'social' | 'ecommerce' | 'campus' | 'arcade' | 'game';
   techStack: string[];
   status: {
     en: string;
@@ -41,8 +42,18 @@ interface StudioApp {
     az: string[];
     ru: string[];
   };
+  complianceBadge?: {
+    en: string;
+    az: string;
+    ru: string;
+  };
   playStoreReady: boolean;
   liveUrl?: string;
+  liveLabel?: {
+    en: string;
+    az: string;
+    ru: string;
+  };
 }
 
 const STUDIO_APPS: StudioApp[] = [
@@ -50,82 +61,103 @@ const STUDIO_APPS: StudioApp[] = [
     id: 'bondify',
     name: 'Bondify',
     tagline: {
-      en: 'Global Social Discovery, Dating & Real-Time Connection Platform',
-      az: 'Qlobal Sosial Kəşf və Tanışlıq Platforması',
-      ru: 'Глобальная Платформа Социальных Знакомств и Общения',
+      en: 'Real-Time Social Discovery Telegram Mini App (@BondifyAppBot)',
+      az: 'Telegram Mini App Sosial Kəşf Platforması (@BondifyAppBot)',
+      ru: 'Платформа Знакомств Telegram Mini App (@BondifyAppBot)',
     },
     category: {
-      en: 'Social & Communication',
-      az: 'Sosial & Əlaqə',
-      ru: 'Социальные Сети & Общение',
+      en: 'Telegram Mini App',
+      az: 'Telegram Mini App',
+      ru: 'Telegram Mini App',
     },
     iconType: 'social',
-    techStack: ['Node.js', 'Firebase', 'Telegram Mini App', 'Android', 'Tailwind CSS'],
+    techStack: ['Telegram Mini App', 'Node.js', 'Firebase', 'Telegram Stars', 'Adsgram'],
     status: {
-      en: 'Live Ecosystem / Android Ready',
-      az: 'Canlı Ekosistem / Android Ready',
-      ru: 'Активная Экосистема / Android Ready',
+      en: 'Live Telegram Mini App',
+      az: 'Canlı Telegram Mini App',
+      ru: 'Активный Telegram Mini App',
+    },
+    statusBadgeColor: 'bg-sky-500/10 text-sky-400 border-sky-500/30',
+    features: {
+      en: [
+        'Instant social discovery & real-time chat inside Telegram',
+        'Dual age mode for maximum user safety & privacy',
+        'Telegram Stars & Adsgram rewarded coin economy',
+      ],
+      az: [
+        'Birbaşa Telegram daxilində real vaxt rejimində tanışlıq və mesajlaşma',
+        'İkili yaş rejimi (dual age mode) ilə yüksək istifadəçi təhlükəsizliyi',
+        'Telegram Stars və Adsgram vasitəsilə mükafatlı coin iqtisadiyyatı',
+      ],
+      ru: [
+        'Мгновенные знакомства и общение в реальном времени внутри Telegram',
+        'Двойной возрастной режим для максимальной безопасности',
+        'Интеграция Telegram Stars и внутренняя экономика Adsgram',
+      ],
+    },
+    complianceBadge: {
+      en: 'Telegram Mini App Verified',
+      az: 'Telegram Mini App (@BondifyAppBot)',
+      ru: 'Telegram Mini App (@BondifyAppBot)',
+    },
+    playStoreReady: true,
+    liveUrl: 'https://t.me/BondifyAppBot',
+    liveLabel: {
+      en: 'Open @BondifyAppBot',
+      az: 'Telegram-da Aç (@BondifyAppBot)',
+      ru: 'Открыть @BondifyAppBot',
+    },
+  },
+  {
+    id: 'trendim-store',
+    name: 'Trendim.store',
+    tagline: {
+      en: 'Modern E-Commerce Storefront Built Specifically for Azerbaijan',
+      az: 'Azərbaycanlılar Üçün Nəzərdə Tutulmuş Rəqəmsal Ticarət Saytı',
+      ru: 'Современный Интернет-Магазин Специально для Азербайджана',
+    },
+    category: {
+      en: 'E-Commerce & Retail',
+      az: 'E-Ticarət Platforması',
+      ru: 'Электронная Коммерция',
+    },
+    iconType: 'ecommerce',
+    techStack: ['Next.js', 'E-Commerce', 'Meta Ads', 'TikTok Ads', 'Tailwind CSS'],
+    status: {
+      en: 'Live Storefront / Azerbaijan',
+      az: 'Canlı Mağaza / Azərbaycan',
+      ru: 'Активный Магазин / Азербайджан',
     },
     statusBadgeColor: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
     features: {
       en: [
-        'Real-time matchmaking & encrypted messaging',
-        'Dual age mode for maximum user safety & privacy',
-        'Telegram Stars & in-app coin economic model',
+        'Curated trending products & gadgets tailored for Azerbaijani shoppers',
+        'Ultra-fast mobile storefront & seamless checkout UX',
+        'Scaled with targeted Meta Ads & TikTok Ads campaigns',
       ],
       az: [
-        'Real vaxt rejimində tanışlıq və şifrələnmiş mesajlaşma',
-        'İkili yaş rejimi (dual age mode) ilə yüksək istifadəçi təhlükəsizliyi',
-        'Telegram Stars və xüsusi daxili coin iqtisadiyyatı',
+        'Azərbaycanlı alıcılar üçün xüsusi seçilmiş trend məhsullar və qadjetlər',
+        'Sürətli mobil vitrin dizaynı və rahat sifariş təcrübəsi',
+        'Meta Ads və TikTok Ads reklamları ilə avtomatlaşdırılmış satış axını',
       ],
       ru: [
-        'Поиск собеседников в реальном времени и сквозное шифрование',
-        'Двойной возрастной режим для максимальной безопасности',
-        'Интеграция Telegram Stars и внутренняя игровая экономика',
+        'Трендовые товары и гаджеты специально для покупателей из Азербайджана',
+        'Быстрая мобильная витрина и удобный интерфейс оформления заказов',
+        'Масштабирование через таргетированную рекламу Meta и TikTok Ads',
       ],
     },
-    playStoreReady: true,
-    liveUrl: 'https://bondify.az',
-  },
-  {
-    id: 'e5cape',
-    name: 'E5cape',
-    tagline: {
-      en: 'High-Octane 3D Endless Arcade Runner Mobile Game',
-      az: 'Dinamik 3D Arcade Runner Mobil Oyunu',
-      ru: '3D Кибер-Неоновый Бесконечный Аркадный Раннер',
+    complianceBadge: {
+      en: 'Official Azerbaijan Storefront',
+      az: 'Rəsmi Azərbaycan E-Ticarət Saytı',
+      ru: 'Официальный Магазин (Азербайджан)',
     },
-    category: {
-      en: 'Mobile Action & Arcade',
-      az: 'Mobil Arkada & Fəaliyyət',
-      ru: 'Мобильный Экшн & Аркада',
+    playStoreReady: false,
+    liveUrl: 'https://trendim.store',
+    liveLabel: {
+      en: 'Visit Trendim.store',
+      az: 'Sayta Keçid (Trendim.store)',
+      ru: 'Перейти на Trendim.store',
     },
-    iconType: 'game',
-    techStack: ['React Native', 'Three.js', 'Godot Engine', 'GLSL Shaders'],
-    status: {
-      en: 'In Active Development / Beta Testing',
-      az: 'Beta Sınaq / In Active Development',
-      ru: 'В Разработке / Бета-Тестирование',
-    },
-    statusBadgeColor: 'bg-amber-500/10 text-amber-400 border-amber-500/30',
-    features: {
-      en: [
-        'Immersive cyber-neon 3D procedurally generated levels',
-        'Physics-based obstacle dodging and velocity chaining',
-        'Optimized 60 FPS performance on mid-tier Android devices',
-      ],
-      az: [
-        'Kiber-neon üslubunda 3D vizuallar və dinamik maneələr',
-        'Fizika əsaslı idarəetmə və sürət zəncirləmə mexanikası',
-        'Android cihazlarında 60 FPS yüksək performans optimizasiyası',
-      ],
-      ru: [
-        'Процедурно генерируемые 3D-уровни в стиле кибер-неон',
-        'Физическая модель уклонения от препятствий и набор скорости',
-        'Стабильные 60 FPS даже на устройствах среднего уровня',
-      ],
-    },
-    playStoreReady: true,
   },
   {
     id: 'telebex',
@@ -169,11 +201,11 @@ const STUDIO_APPS: StudioApp[] = [
   },
   {
     id: 'getrich-lasergrid',
-    name: 'GET RICH OR RESET & Laser Grid',
+    name: 'GlowSnake.io & Arcade Games',
     tagline: {
-      en: 'Hyper-Casual Reflex & Laser Puzzle Arcade Games',
-      az: 'Hiper-təsadüfi və Arkada Mobil Oyun Layihələri',
-      ru: 'Гиперказуальные Рефлекс-Аркады и Лазерные Головоломки',
+      en: 'Hyper-Casual Reflex, GlowSnake.io & Arcade Mobile Games',
+      az: 'GlowSnake.io, GET RICH OR RESET və Arkada Mobil Oyunları',
+      ru: 'GlowSnake.io и Гиперказуальные Аркадные Игры',
     },
     category: {
       en: 'Hyper-Casual Games',
@@ -181,9 +213,9 @@ const STUDIO_APPS: StudioApp[] = [
       ru: 'Гиперказуальные Игры',
     },
     iconType: 'arcade',
-    techStack: ['Godot Engine', 'C#', 'Mobile Arcade', 'AdMob Integration'],
+    techStack: ['Godot Engine', 'Capacitor Android', 'Mobile Arcade', 'AdMob Integration'],
     status: {
-      en: 'Production Ready / Store Asset Prep',
+      en: 'Production Ready / Google Play',
       az: 'Yayıma Hazır / Production Ready',
       ru: 'Готово к Публикации',
     },
@@ -191,18 +223,18 @@ const STUDIO_APPS: StudioApp[] = [
     features: {
       en: [
         'Ultra-fast reflex challenges with instant retry mechanic',
-        'Satisfying haptic feedback & minimalist audio design',
-        'Privacy-compliant lightweight ad monetization',
+        'Satisfying haptic feedback & glowing neon arcade visuals',
+        'Privacy-compliant lightweight AdMob monetization',
       ],
       az: [
-        'Sürətli refleks sınaqları və anlıq təkrar cəhd mexanikası',
+        'Sürətli refleks sınaqları və neon qrafikalı GlowSnake.io oyunu',
         'Minimalist səs dizaynı və vibro-əlaqə effekti',
-        'Təhlükəsiz və yüngül reklam monetizasiyası',
+        'Təhlükəsiz və yüngül Google AdMob monetizasiyası',
       ],
       ru: [
-        'Мгновенный перезапуск и динамичные испытания на реакцию',
-        'Приятный тактильный отклик и стильный минималистичный звук',
-        'Безопасная и ненавязчивая рекламная монетизация',
+        'Мгновенный перезапуск и динамичная неоновая графика GlowSnake.io',
+        'Приятный тактильный отклик и стильный звук',
+        'Безопасная рекламная монетизация через Google AdMob',
       ],
     },
     playStoreReady: true,
@@ -215,7 +247,7 @@ export default function AteshStudioSection() {
   return (
     <section
       id="atesh-studio"
-      aria-label="Atesh Studio - Mobile Apps & Games"
+      aria-label="Atesh Studio - Mobile Apps, E-Commerce & Games"
       className="py-20 sm:py-24 relative bg-gradient-to-b from-[#080910] via-[#0b0d18] to-[#07080c] border-t border-b border-amber-500/20 overflow-hidden"
     >
       {/* Ambient background glows */}
@@ -231,7 +263,7 @@ export default function AteshStudioSection() {
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            Atesh Studio — <span className="gold-gradient-text">Next-Level Mobile Apps & Games</span>
+            Atesh Studio — <span className="gold-gradient-text">Next-Level Mobile Apps &amp; Digital Ventures</span>
           </h2>
 
           <div className="mt-4 space-y-2 max-w-3xl">
@@ -317,7 +349,7 @@ export default function AteshStudioSection() {
           </div>
         </div>
 
-        {/* Flagship Apps & Games Grid */}
+        {/* Flagship Apps & Ecosystem Grid */}
         <div className="space-y-6">
           <div className="flex items-center justify-between pb-3 border-b border-slate-800">
             <div>
@@ -343,6 +375,10 @@ export default function AteshStudioSection() {
                       <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500/20 to-yellow-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-md">
                         {app.iconType === 'game' || app.iconType === 'arcade' ? (
                           <Gamepad2 className="w-6 h-6" />
+                        ) : app.iconType === 'ecommerce' ? (
+                          <ShoppingBag className="w-6 h-6" />
+                        ) : app.iconType === 'social' ? (
+                          <Send className="w-6 h-6 text-sky-400" />
                         ) : (
                           <Smartphone className="w-6 h-6" />
                         )}
@@ -387,10 +423,14 @@ export default function AteshStudioSection() {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-slate-800 flex items-center justify-between text-xs">
+                <div className="pt-4 border-t border-slate-800 flex items-center justify-between text-xs gap-2 flex-wrap">
                   <div className="flex items-center gap-1.5 text-slate-400">
-                    <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>{t.studio.playStoreStatus}</span>
+                    <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                    <span>
+                      {app.complianceBadge
+                        ? app.complianceBadge[locale] || app.complianceBadge.en
+                        : t.studio.playStoreStatus}
+                    </span>
                   </div>
 
                   {app.liveUrl ? (
@@ -398,10 +438,12 @@ export default function AteshStudioSection() {
                       href={app.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 text-amber-300 font-bold hover:bg-amber-500/20 transition"
+                      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-amber-500/15 border border-amber-500/30 text-amber-300 font-bold hover:bg-amber-500 hover:text-black transition"
                     >
-                      <span>{t.studio.liveWeb}</span>
-                      <ExternalLink className="w-3 h-3" />
+                      <span>
+                        {app.liveLabel ? app.liveLabel[locale] || app.liveLabel.en : t.studio.liveWeb}
+                      </span>
+                      <ExternalLink className="w-3.5 h-3.5" />
                     </a>
                   ) : (
                     <div className="flex items-center gap-2">
