@@ -22,6 +22,8 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: [
+          'Google-adstxt',
+          'Mediapartners-Google',
           'GPTBot',
           'ChatGPT-User',
           'PerplexityBot',

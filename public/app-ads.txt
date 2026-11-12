@@ -1,8 +1,1 @@
-# Atesh Studio Official app-ads.txt for Google AdMob
-# Developer: Atesh Studio by Atesh Baliyev
-# Official Website: https://atesh.site
-# Contact: atesbaliyev@gmail.com
-#
-# Format:
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
-# (Add your official AdMob Publisher ID below when ready)
+google.com, pub-9623198312339039, DIRECT, f08c47fec0942fa0
