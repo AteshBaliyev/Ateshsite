@@ -13,8 +13,9 @@
   - Azərbaycan Dövlət Aqrar Universiteti (ADAU) — İnformasiya Texnologiyaları (İKT)
 
 ## 2. Atesh Studio — Mobile Applications & Games
-- **Bondify** (Social discovery, matchmaking, Telegram Mini App & Android app).
-- **E5cape** (Dynamic 3D cyber-neon endless arcade runner game; React Native, Three.js, Godot).
+- **Bondify** (Social discovery, matchmaking, Telegram Mini App @BondifyAppBot & Android app).
+- **Trendim.store** (Dedicated e-commerce marketplace and shopping platform for Azerbaijan: https://trendim.store).
+- **GlowSnake.io** (Hyper-casual neon snake mobile arcade game for Android with Google Play & AdMob).
 - **TələbəX** (Interactive campus network and student social community).
 - **GET RICH OR RESET & Laser Grid** (Hyper-casual and reflex mobile games).
 - Legal and Data Safety:

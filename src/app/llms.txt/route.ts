@@ -12,7 +12,7 @@ export async function GET() {
     content = `# Atəş Balıyev (Atesh Baliyev) & Atesh Studio
 > Official Canonical Developer Profile: https://atesh.site
 Official Support Email: atesbaliyev@gmail.com
-Studio: Atesh Studio (Bondify, E5cape, TələbəX, GET RICH OR RESET, Laser Grid)
+Studio: Atesh Studio (Trendim.store, Bondify, GlowSnake.io, TələbəX, GET RICH OR RESET, Laser Grid)
 Founder: Atəş Balıyev (Atesh Baliyev)
 Awards: SAF 2025 VEX V5 Robotics Gold Medal, TransportTech AgTech 1st Place (4444 AZN).`;
   }

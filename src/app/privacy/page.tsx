@@ -17,7 +17,7 @@ import { SITE_CONFIG } from '@/lib/seo';
 export const metadata: Metadata = {
   title: 'Privacy Policy | Atesh Studio & Mobile Applications',
   description:
-    'Official Privacy Policy for Atesh Studio mobile applications and games (Bondify, E5cape, TələbəX, and all associated software) by Atesh Baliyev.',
+    'Official Privacy Policy for Atesh Studio applications and games (Bondify, GlowSnake.io, Trendim.store, TələbəX, and all associated software) by Atesh Baliyev.',
   alternates: {
     canonical: 'https://atesh.site/privacy',
   },
@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy for <span className="gold-gradient-text">Atesh Studio</span> Applications & Games
           </h1>
           <p className="mt-3 text-sm text-slate-300 leading-relaxed">
-            Covers <strong>Bondify</strong>, <strong>E5cape</strong>, <strong>TələbəX</strong>, <strong>GET RICH OR RESET</strong>, <strong>Laser Grid</strong>, and all digital products operated by Atesh Studio (Founder & Developer: Atəş Balıyev).
+            Covers <strong>Bondify</strong>, <strong>GlowSnake.io</strong>, <strong>Trendim.store</strong>, <strong>TələbəX</strong>, <strong>GET RICH OR RESET</strong>, <strong>Laser Grid</strong>, and all digital products operated by Atesh Studio (Founder & Developer: Atəş Balıyev).
           </p>
           <div className="mt-4 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
             <span><strong>Effective Date:</strong> November 2026</span>
@@ -75,8 +75,9 @@ export default function PrivacyPolicyPage() {
               This Privacy Policy applies to all mobile applications, games, and digital services developed and published by <strong>Atesh Studio</strong> (founded by <strong>Atəş Balıyev / Atesh Baliyev</strong>), including but not limited to:
             </p>
             <ul className="list-disc list-inside space-y-1 text-slate-200 mb-4 pl-2">
-              <li><strong>Bondify</strong> (Social discovery, connection platform & Telegram Mini App)</li>
-              <li><strong>E5cape</strong> (3D endless arcade runner mobile game)</li>
+              <li><strong>Bondify</strong> (Social discovery, connection platform & Telegram Mini App — @BondifyAppBot)</li>
+              <li><strong>Trendim.store</strong> (E-commerce marketplace platform for Azerbaijan)</li>
+              <li><strong>GlowSnake.io</strong> (Android arcade mobile game)</li>
               <li><strong>TələbəX</strong> (Interactive campus & student community app)</li>
               <li><strong>GET RICH OR RESET & Laser Grid</strong> (Arcade & reflex mobile games)</li>
               <li>Official website: <Link href="/" className="text-amber-400 hover:underline">atesh.site</Link></li>
@@ -108,7 +109,7 @@ export default function PrivacyPolicyPage() {
               <div>
                 <h3 className="font-semibold text-white mb-1">C. Gameplay & Session Data</h3>
                 <p className="text-xs text-slate-300">
-                  In games like E5cape or Laser Grid, high scores, levels reached, and gameplay achievements are stored locally on the device or synced to user accounts when cloud save is active.
+                  In games like GlowSnake.io or Laser Grid, high scores, levels reached, and gameplay achievements are stored locally on the device or synced to user accounts when cloud save is active.
                 </p>
               </div>
             </div>
@@ -278,7 +279,7 @@ export default function PrivacyPolicyPage() {
           </h3>
           <div className="p-6 rounded-2xl bg-[#0a0c14] border border-slate-800 text-xs sm:text-sm text-slate-300 space-y-3 leading-relaxed">
             <p>
-              Atesh Studio (təsisçi: Atəş Balıyev) olaraq Bondify, E5cape, TələbəX, GET RICH OR RESET və digər tətbiqlərimizdə istifadəçi məlumatlarının məxfiliyinə tam zəmanət veririk.
+              Atesh Studio (təsisçi: Atəş Balıyev) olaraq Bondify, GlowSnake.io, Trendim.store, TələbəX, GET RICH OR RESET və digər tətbiqlərimizdə istifadəçi məlumatlarının məxfiliyinə tam zəmanət veririk.
             </p>
             <p>
               Toplanan məlumatlar yalnız tətbiqlərin düzgün işləməsi və sabitliyi üçün istifadə edilir, heç bir halda üçüncü şəxslərə satılmır və ya ötürülmür. İstifadəçilər öz hesablarını və şəxsi məlumatlarını istənilən vaxt tətbiq daxilindən və ya <Link href="/data-deletion" className="text-amber-400 underline">Məlumatların Silinməsi Səhifəsi</Link> vasitəsilə 7 iş günü ərzində tam silə bilərlər.

@@ -42,7 +42,7 @@ export default function TermsOfServicePage() {
             Terms of Service — <span className="gold-gradient-text">Atesh Studio</span>
           </h1>
           <p className="mt-3 text-sm text-slate-300 leading-relaxed">
-            Please read these Terms of Service carefully before using any mobile applications (Bondify, E5cape, TələbəX, GET RICH OR RESET, Laser Grid) or website services operated by Atesh Studio.
+            Please read these Terms of Service carefully before using any mobile applications (Trendim.store, Bondify, GlowSnake.io, TələbəX, GET RICH OR RESET, Laser Grid) or website services operated by Atesh Studio.
           </p>
           <div className="mt-4 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
             <span><strong>Effective Date:</strong> November 2026</span>
@@ -88,7 +88,7 @@ export default function TermsOfServicePage() {
               Intellectual Property Rights
             </h2>
             <p>
-              All software, source code, game mechanics, 3D graphics, user interfaces, branding, trademarks (including Atesh Studio, Bondify, E5cape, and TələbəX), and multimedia content are the exclusive intellectual property of Atesh Studio and Atəş Balıyev. Users receive a limited, revocable, non-exclusive, non-transferable license to use the apps for personal, non-commercial entertainment and communication purposes.
+              All software, source code, game mechanics, 3D graphics, user interfaces, branding, trademarks (including Atesh Studio, Bondify, Trendim.store, GlowSnake.io, and TələbəX), and multimedia content are the exclusive intellectual property of Atesh Studio and Atəş Balıyev. Users receive a limited, revocable, non-exclusive, non-transferable license to use the apps for personal, non-commercial entertainment and communication purposes.
             </p>
           </section>
 

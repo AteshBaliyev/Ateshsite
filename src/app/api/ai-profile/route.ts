@@ -32,13 +32,21 @@ export async function GET() {
       applications: [
         {
           name: 'Bondify',
-          category: 'Social Discovery & Dating',
+          category: 'Social Discovery & Telegram Mini App (@BondifyAppBot)',
           tech: ['Node.js', 'Firebase', 'Telegram Mini App', 'Android'],
+          url: 'https://t.me/BondifyAppBot',
         },
         {
-          name: 'E5cape',
-          category: '3D Endless Arcade Runner Mobile Game',
-          tech: ['React Native', 'Three.js', 'Godot Engine'],
+          name: 'Trendim.store',
+          category: 'E-Commerce Marketplace for Azerbaijan',
+          tech: ['Next.js', 'PostgreSQL', 'Tailwind CSS', 'Stripe'],
+          url: 'https://trendim.store',
+        },
+        {
+          name: 'GlowSnake.io',
+          category: 'Arcade Snake Mobile Game (Google Play Store)',
+          tech: ['Godot Engine', 'Android', 'AdMob'],
+          url: 'https://atesh.site/glowsnake-io/privacy-policy.html',
         },
         {
           name: 'TələbəX',

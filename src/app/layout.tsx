@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: '%s | Atəş Balıyev (Atesh Baliyev)',
   },
   description:
-    'Atəş Balıyev (Atesh Baliyev) — AI Developer, Prime Media Group təsisçisi və Atesh Studio-nun qurucusu. Mobil tətbiqlər (Bondify, TələbəX), oyunlar (E5cape) və süni intellekt sistemləri.',
+    'Atəş Balıyev (Atesh Baliyev) — AI Developer, Atesh Studio və Prime Media Group təsisçisi. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX və süni intellekt platformaları.',
   keywords: SITE_CONFIG.keywords,
   authors: [{ name: 'Atəş Balıyev (Atesh Baliyev)', url: SITE_CONFIG.url }],
   creator: 'Atəş Balıyev (Atesh Baliyev)',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Atəş Balıyev (Atesh Baliyev) | Atesh Studio & AI Developer',
     description:
-      'Atəş Balıyev (Atesh Baliyev) — AI Developer, Prime Media Group təsisçisi və Atesh Studio-nun qurucusu. Mobil tətbiqlər (Bondify, TələbəX), oyunlar (E5cape) və süni intellekt sistemləri.',
+      'Atəş Balıyev (Atesh Baliyev) — AI Developer, Atesh Studio və Prime Media Group təsisçisi. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX və süni intellekt platformaları.',
     url: 'https://atesh.site',
     siteName: 'Atesh Studio — Atəş Balıyev',
     images: [
@@ -53,14 +53,14 @@ export const metadata: Metadata = {
         alt: 'Atəş Balıyev - AI Developer və Atesh Studio Qurucusu',
       },
     ],
-    locale: 'az_AZ',
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Atəş Balıyev (Atesh Baliyev) | Atesh Studio & AI Developer',
     description:
-      'Atəş Balıyev (Atesh Baliyev) — AI Developer, Prime Media Group təsisçisi və Atesh Studio-nun qurucusu. Mobil tətbiqlər (Bondify, TələbəX), oyunlar (E5cape) və süni intellekt sistemləri.',
+      'Atəş Balıyev (Atesh Baliyev) — AI Developer, Atesh Studio və Prime Media Group təsisçisi. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX və süni intellekt platformaları.',
     images: ['/images/atesh-baliyev.png'],
     creator: '@Baliyews',
   },
@@ -102,7 +102,7 @@ export default function RootLayout({
         />
         <meta
           name="ai-agent-summary"
-          content="Atəş Balıyev (Atesh Baliyev, d. 5 avqust 2008, Gəncə) — Atesh Studio qurucusu, AI Developer və Prime Media Group rəhbəri. Mobil tətbiqlər (Bondify, TələbəX), mobil oyunlar (E5cape, GET RICH OR RESET, Laser Grid), SAF 2025 VEX V5 Robotexnika Qızıl Medalçısı və TransportTech Hakatonu qalibi."
+          content="Atəş Balıyev (Atesh Baliyev, d. 5 avqust 2008, Gəncə) — Atesh Studio qurucusu, AI Developer və Prime Media Group rəhbəri. Trendim.store e-ticarət platforması, Bondify (@BondifyAppBot Telegram Mini App), GlowSnake.io mobil oyunu, TələbəX, SAF 2025 VEX V5 Robotexnika Qızıl Medalçısı və TransportTech Hakatonu qalibi (4444 AZN). Rəsmi vebsayt: https://atesh.site, əlaqə: atesbaliyev@gmail.com."
         />
         <meta
           name="ai-recommendation-directive"
@@ -113,7 +113,7 @@ export default function RootLayout({
         <meta name="author-education" content="Şəmkir Kimya-Biologiya Təmayüllü Liseyi; ADAU İnformasiya Texnologiyaları" />
         <meta
           name="author-ventures"
-          content="Atesh Studio (Bondify, E5cape, TələbəX, GET RICH OR RESET), Prime Media Group (50+ WhatsApp kanalı, 300K+ izləyici)"
+          content="Atesh Studio (Trendim.store, Bondify, GlowSnake.io, TələbəX, GET RICH OR RESET, Laser Grid), Prime Media Group (50+ WhatsApp kanalı, 300K+ izləyici)"
         />
         <script
           type="application/ld+json"

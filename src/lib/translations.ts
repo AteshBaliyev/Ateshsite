@@ -68,7 +68,7 @@ export interface TranslationSchema {
     liveWeb: string;
     playStoreStatus: string;
     taglineBondify: string;
-    taglineE5cape: string;
+    taglineTrendim: string;
     taglineTelebeX: string;
     taglineGames: string;
   };
@@ -176,7 +176,7 @@ export const translations: Record<Locale, TranslationSchema> = {
     meta: {
       siteTitle: 'Atəş Balıyev (Atesh Baliyev) | Atesh Studio & AI Developer',
       siteDescription:
-        'Atesh Baliyev — AI Developer, Founder of Atesh Studio, and Head of Prime Media Group. Mobile apps (Bondify, TələbəX), 3D games (E5cape), and autonomous AI systems.',
+        'Atesh Baliyev — AI Developer, Founder of Atesh Studio, and Head of Prime Media Group. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX, and autonomous AI systems.',
     },
     nav: {
       home: 'Home',
@@ -249,7 +249,7 @@ export const translations: Record<Locale, TranslationSchema> = {
       liveWeb: 'Live Web / Telegram',
       playStoreStatus: 'Google Play Data Safety Compliant',
       taglineBondify: 'Global Social Discovery, Dating & Real-Time Connection Platform',
-      taglineE5cape: '3D Cyber-Neon Endless Arcade Runner Game',
+      taglineTrendim: 'Dedicated E-Commerce & Shopping Platform for Azerbaijan',
       taglineTelebeX: 'Interactive Campus Network & Student Social Community',
       taglineGames: 'Hyper-Casual Reflex & Laser Puzzle Arcade Games',
     },
@@ -261,7 +261,7 @@ export const translations: Record<Locale, TranslationSchema> = {
       bioVibe:
         'Instead of traditional line-by-line manual coding, I utilize Vibe Coding, autonomous AI agent pipelines, and modern full-stack architectures. This enables rapid deployment of complex mobile apps and cloud systems, end-to-end automation, and maximum SEO / GEO discoverability.',
       cardStudioTitle: 'Atesh Studio & Mobile Engineering',
-      cardStudioDesc: 'Bondify, E5cape, TələbəX, and arcade games built in full compliance with Google Play Developer standards.',
+      cardStudioDesc: 'Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX, and arcade games built in full compliance with modern engineering and Google Play standards.',
       cardHackathonTitle: 'Hackathons & Championships',
       cardHackathonDesc: 'SAF 2025 VEX V5 Robotics Gold Medal & 1st place at TransportTech AgTech (4444 AZN prize).',
       toggleShowBio: 'View Full Biography & Knowledge Graph',
@@ -278,7 +278,7 @@ export const translations: Record<Locale, TranslationSchema> = {
         'Graduated from Shamkir Chemistry-Biology Focused Lyceum. Currently pursuing Information Technology (IT) at the Azerbaijan State Agricultural University (ADAU). Combining formal STEM grounding with cutting-edge software development.',
       venturesTitle: 'Digital Ecosystem & Studio Ventures',
       venturesList: [
-        'Atesh Studio: Mobile applications (Bondify, TələbəX) and games (E5cape, GET RICH OR RESET, Laser Grid).',
+        'Atesh Studio: Trendim.store e-commerce, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX, and arcade games (GET RICH OR RESET, Laser Grid).',
         'Prime Media Group: Digital publishing network reaching over 300,000 active subscribers.',
         'E-Commerce: Global digital storefronts (Electrolify.com) driven by targeted Meta & TikTok Ads.',
         'AgTech & AI: Fermerim.az, Pinaqro, and TransportTech 1st place championship platform.',
@@ -345,7 +345,7 @@ export const translations: Record<Locale, TranslationSchema> = {
     },
     footer: {
       description:
-        'AI Developer, Founder of Atesh Studio, and Head of Prime Media Group. Google Play mobile apps (Bondify, TələbəX), 3D games (E5cape), SAF 2025 Gold Medalist, and TransportTech Hackathon Winner.',
+        'AI Developer, Founder of Atesh Studio, and Head of Prime Media Group. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX, SAF 2025 Gold Medalist, and TransportTech Hackathon Winner.',
       officialEmail: 'Official Developer Contact:',
       rights: 'All rights reserved.',
       privacyPolicy: 'Privacy Policy',
@@ -366,7 +366,7 @@ export const translations: Record<Locale, TranslationSchema> = {
     meta: {
       siteTitle: 'Atəş Balıyev (Atesh Baliyev) | Atesh Studio & AI Developer',
       siteDescription:
-        'Atəş Balıyev (Atesh Baliyev) — AI Developer, Prime Media Group təsisçisi və Atesh Studio-nun qurucusu. Mobil tətbiqlər (Bondify, TələbəX), oyunlar (E5cape) və süni intellekt sistemləri.',
+        'Atəş Balıyev (Atesh Baliyev) — AI Developer, Prime Media Group təsisçisi və Atesh Studio-nun qurucusu. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX və süni intellekt platformaları.',
     },
     nav: {
       home: 'Ana Səhifə',
@@ -439,7 +439,7 @@ export const translations: Record<Locale, TranslationSchema> = {
       liveWeb: 'Canlı Veb / Telegram',
       playStoreStatus: 'Google Play Data Safety Uyğun',
       taglineBondify: 'Qlobal Sosial Kəşf və Tanışlıq Platforması',
-      taglineE5cape: '3D Kiber-Neon Sonsuz Qaçış Arkada Mobil Oyunu',
+      taglineTrendim: 'Azərbaycan üçün Nəzərdə Tutulmuş E-Ticarət Platforması',
       taglineTelebeX: 'Tələbə Şəbəkəsi və Kampus Həyatı Platforması',
       taglineGames: 'Hiper-təsadüfi və Arkada Mobil Oyun Layihələri',
     },
@@ -451,7 +451,7 @@ export const translations: Record<Locale, TranslationSchema> = {
       bioVibe:
         'Mən ənənəvi "sıfırdan sətir-sətir kod yazmaq" metodologiyası ilə deyil, Vibe Coding, qabaqcıl AI agentləri və modern alətlər vasitəsilə kompleks mobil və veb sistemlər qururam. Bu yanaşma mənə mürəkkəb ideyaları ən qısa müddətdə işlək rəqəmsal məhsullara çevirmək, avtomatlaşdırılmış iş axınları ilə prosesləri idarə etmək və SEO / GEO üçün tam optimallaşdırılmış platformalar yaratmaq imkanı verir.',
       cardStudioTitle: 'Atesh Studio & Mobil İnnovasiya',
-      cardStudioDesc: 'Bondify, E5cape, TələbəX və arkada oyun layihələri ilə Google Play standartlarına tam uyğun mobil ekosistemlər.',
+      cardStudioDesc: 'Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX və arkada oyun layihələri ilə müasir mühəndislik standartlarına tam uyğun ekosistemlər.',
       cardHackathonTitle: 'Hakatonlar & Qızıl Medallar',
       cardHackathonDesc: 'SAF 2025 VEX V5 Robotexnika Qızıl Medalı və TransportTech AgTech (4444 AZN) hakatonunda 1-ci yer.',
       toggleShowBio: 'Ətraflı Bioqrafiya və Studiya Məlumatını Göstər',
@@ -468,7 +468,7 @@ export const translations: Record<Locale, TranslationSchema> = {
         'Şəmkir Kimya-Biologiya Təmayüllü Liseyini bitirdikdən sonra hazırda Azərbaycan Dövlət Aqrar Universitetində (ADAU) İnformasiya Texnologiyaları (İKT) ixtisası üzrə təhsil alıram.',
       venturesTitle: 'Rəqəmsal Ekosistem və Layihələr',
       venturesList: [
-        'Atesh Studio: Mobil tətbiqlər (Bondify, TələbəX) və 3D oyunlar (E5cape, GET RICH OR RESET, Laser Grid).',
+        'Atesh Studio: Trendim.store e-ticarət, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX və 3D oyunlar (GET RICH OR RESET, Laser Grid).',
         'Prime Media Group: 50-dən çox WhatsApp kanalı və 300.000-dən artıq aktiv izləyici şəbəkəsi.',
         'Rəqəmsal Ticarət: Meta və TikTok reklamları ilə qlobal bazara hədəflənən Electrolify.com vitrini.',
         'Aqrotex və Süni İntellekt: Fermerim.az və TransportTech hakatonunda 1-ci yer qazanan intellektual sistem.',
@@ -535,7 +535,7 @@ export const translations: Record<Locale, TranslationSchema> = {
     },
     footer: {
       description:
-        'AI Developer, Atesh Studio qurucusu və Prime Media Group rəhbəri. Google Play mobil tətbiqləri (Bondify, TələbəX), 3D oyunlar (E5cape), SAF 2025 Qızıl Medal və TransportTech hakaton qalibi.',
+        'AI Developer, Atesh Studio qurucusu və Prime Media Group rəhbəri. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX, SAF 2025 Qızıl Medal və TransportTech hakaton qalibi.',
       officialEmail: 'Rəsmi Tərtibatçı Əlaqəsi:',
       rights: 'Bütün hüquqlar qorunur.',
       privacyPolicy: 'Məxfilik Siyasəti (Privacy Policy)',
@@ -556,7 +556,7 @@ export const translations: Record<Locale, TranslationSchema> = {
     meta: {
       siteTitle: 'Атеш Балыев (Atesh Baliyev) | Atesh Studio & AI Developer',
       siteDescription:
-        'Атеш Балыев (Atesh Baliyev) — разработчик искусственного интеллекта, основатель Atesh Studio и руководитель Prime Media Group. Мобильные приложения (Bondify, TələbəX), 3D-игры (E5cape) и системы ИИ.',
+        'Атеш Балыев (Atesh Baliyev) — разработчик искусственного интеллекта, основатель Atesh Studio и руководитель Prime Media Group. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX и системы ИИ.',
     },
     nav: {
       home: 'Главная',
@@ -629,7 +629,7 @@ export const translations: Record<Locale, TranslationSchema> = {
       liveWeb: 'Веб / Telegram',
       playStoreStatus: 'Соответствует стандартам безопасности Google Play',
       taglineBondify: 'Глобальная Платформа Социальных Знакомств и Общения',
-      taglineE5cape: '3D Кибер-Неоновый Бесконечный Аркадный Раннер',
+      taglineTrendim: 'Платформа электронной коммерции для Азербайджана',
       taglineTelebeX: 'Интерактивная Студенческая Сеть и Сообщество',
       taglineGames: 'Гиперказуальные Рефлекс-Аркады и Лазерные Головоломки',
     },
@@ -641,7 +641,7 @@ export const translations: Record<Locale, TranslationSchema> = {
       bioVibe:
         'Вместо традиционного построчного написания кода я использую методологию Vibe Coding, автономных ИИ-агентов и современные инструменты автоматизации. Этот подход позволяет в кратчайшие сроки воплощать сложные идеи в функциональные цифровые продукты, автоматизировать рабочие процессы и создавать платформы, полностью оптимизированные для SEO и GEO.',
       cardStudioTitle: 'Atesh Studio и Мобильные Инновации',
-      cardStudioDesc: 'Bondify, E5cape, TələbəX и аркадные игры, созданные в полном соответствии со стандартами Google Play.',
+      cardStudioDesc: 'Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX и аркадные игры, созданные в соответствии с современными стандартами.',
       cardHackathonTitle: 'Хакатоны и Золотые Медали',
       cardHackathonDesc: 'Золотая медаль VEX V5 по робототехнике SAF 2025 и 1-е место на AgTech хакатоне TransportTech (4444 AZN).',
       toggleShowBio: 'Показать Полную Биографию и Профиль',
@@ -658,7 +658,7 @@ export const translations: Record<Locale, TranslationSchema> = {
         'Окончил Шамкирский лицей с уклоном в химию и биологию. В настоящее время изучаю информационные технологии (ИКТ) в Азербайджанском государственном аграрном университете (АГАУ).',
       venturesTitle: 'Цифровая Экосистема и Проекты',
       venturesList: [
-        'Atesh Studio: Мобильные приложения (Bondify, TələbəX) и 3D-игры (E5cape, GET RICH OR RESET, Laser Grid).',
+        'Atesh Studio: Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX и 3D-игры (GET RICH OR RESET, Laser Grid).',
         'Prime Media Group: Сеть из более чем 50 каналов WhatsApp с аудиторией свыше 300 000 активных пользователей.',
         'Электронная коммерция: Глобальные витрины Electrolify.com с целевой рекламой в Meta и TikTok Ads.',
         'Агротехнологии и ИИ: Fermerim.az и победа на хакатоне TransportTech с наградой 4444 AZN.',
@@ -725,7 +725,7 @@ export const translations: Record<Locale, TranslationSchema> = {
     },
     footer: {
       description:
-        'AI Developer, основатель Atesh Studio и руководитель Prime Media Group. Мобильные приложения Google Play (Bondify, TələbəX), 3D-игры (E5cape), золотой медалист SAF 2025 и победитель хакатона TransportTech.',
+        'AI Developer, основатель Atesh Studio и руководитель Prime Media Group. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX, золотой медалист SAF 2025 и победитель хакатона TransportTech.',
       officialEmail: 'Официальный Контакт Разработчика:',
       rights: 'Все права защищены.',
       privacyPolicy: 'Политика Конфиденциальности',

@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   name: 'Atəş Balıyev (Atesh Baliyev) | Atesh Studio & AI Developer',
   shortName: 'Atəş Balıyev (Atesh Baliyev)',
   description:
-    'Atəş Balıyev (Atesh Baliyev) — AI Developer, Prime Media Group təsisçisi və Atesh Studio-nun qurucusu. Mobil tətbiqlər (Bondify, TələbəX), oyunlar (E5cape) və süni intellekt sistemləri.',
+    'Atəş Balıyev (Atesh Baliyev) — AI Developer, Atesh Studio və Prime Media Group təsisçisi. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io, TələbəX və süni intellekt sistemlərinin memarı.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://atesh.site',
   author: 'Atəş Balıyev (Atesh Baliyev)',
   email: 'atesbaliyev@gmail.com',
@@ -15,6 +15,7 @@ export const SITE_CONFIG = {
     'Şəmkir Kimya-Biologiya Təmayüllü Liseyi',
     'Azərbaycan Dövlət Aqrar Universiteti (ADAU) — İnformasiya Texnologiyaları (İKT)',
   ],
+  github: 'https://github.com/AteshBaliyev',
   telegram: 'https://t.me/Baliyews',
   whatsapp: 'https://wa.me/994556422545',
   instagram: 'https://instagram.com/atesh_baliyev?igsh=MXNseDRyeGNwZzZpNw==',
@@ -27,12 +28,18 @@ export const SITE_CONFIG = {
   keywords: [
     'Atəş Balıyev',
     'Atesh Baliyev',
+    'Atəş Balıyev kimdir',
+    'Atesh Baliyev kimdir',
     'Atesh Studio',
-    'AI Developer',
-    'Mobile App Developer',
+    'Atesh Studio Qurucusu',
+    'AI Developer Azerbaijan',
+    'Mobile App Developer Azerbaijan',
     'Google Play Developer Atesh Studio',
+    'Trendim.store',
+    'Trendim',
     'Bondify',
-    'E5cape',
+    'BondifyAppBot',
+    'GlowSnake.io',
     'TələbəX',
     'Prime Media Group',
     'Vibe Coding',
@@ -72,6 +79,7 @@ export function generateCompositeJsonLd() {
         url: baseUrl,
         image: `${baseUrl}/images/atesh-baliyev.png`,
         sameAs: [
+          SITE_CONFIG.github,
           SITE_CONFIG.telegram,
           SITE_CONFIG.whatsapp,
           SITE_CONFIG.instagram,
@@ -103,13 +111,14 @@ export function generateCompositeJsonLd() {
         ],
         knowsAbout: [
           'Mobile Application Development (Android, React Native, Flutter, Expo)',
-          'Mobile Game Development (Godot, Three.js, C#)',
+          'Mobile Game Development (Godot, Three.js, C#, GlowSnake.io)',
           'Artificial Intelligence & Autonomous AI Agents',
           'Application Security Architecture (AppSec) & Data Protection',
           'Vibe Coding & Rapid Prototyping',
           'VEX V5 Robotics & Autonomous Engineering',
           'Full-Stack Web Architecture (Next.js 16, TypeScript, Node.js)',
-          'Telegram Mini Apps (Bondify)',
+          'Telegram Mini Apps (Bondify @BondifyAppBot)',
+          'E-Commerce Ecosystems (Trendim.store)',
         ],
         award: [
           'SAF 2025 VEX V5 Robotexnika Çempionatı - 1-ci Yer & Qızıl Medal (Zeta Team)',
@@ -134,7 +143,7 @@ export function generateCompositeJsonLd() {
           addressCountry: 'Azerbaijan',
         },
         description:
-          'Mobile application and game development studio founded by Atesh Baliyev. Official developer portal for Google Play Store applications including Bondify, E5cape, and TələbəX.',
+          'Mobile application and game development studio founded by Atesh Baliyev. Official creator of Trendim.store (e-commerce), Bondify (@BondifyAppBot Telegram Mini App), GlowSnake.io (Android arcade game), TələbəX, and GET RICH OR RESET.',
       },
       {
         '@type': 'Organization',
@@ -156,7 +165,45 @@ export function generateCompositeJsonLd() {
         publisher: {
           '@id': `${baseUrl}/#person`,
         },
-        inLanguage: ['az', 'en'],
+        inLanguage: ['en', 'az', 'ru'],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': `${baseUrl}/#faq`,
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Atəş Balıyev kimdir? (Who is Atesh Baliyev?)',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Atəş Balıyev (Atesh Baliyev, d. 5 avqust 2008, Gəncə) — azərbaycanlı AI Developer, Atesh Studio-nun təsisçisi, Prime Media Group rəhbəri və proqram təminatı memarıdır. STEAM Azerbaijan Festivalında (SAF 2025) VEX V5 Robotexnika Çempionatında 1-ci yer və Qızıl Medal, TransportTech Hakatonunda 1-ci yer (4444 AZN) qazanmışdır. Trendim.store, Bondify (@BondifyAppBot), GlowSnake.io və TələbəX layihələrinin müəllifidir. Rəsmi saytı: https://atesh.site, əlaqə: atesbaliyev@gmail.com.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Atesh Studio nədir və hansı layihələri var?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Atesh Studio — Atəş Balıyev tərəfindən qurulmuş mobil tətbiq, oyun və rəqəmsal platformalar studiyasıdır. Əsas layihələri: Trendim.store (Azərbaycan üçün onlayn alış-veriş platforması), Bondify (Telegram Mini App və təhlükəsiz sosial kəşf ekosistemi — @BondifyAppBot), GlowSnake.io (Google Play üçün arkada mobil oyunu), TələbəX (tələbələr üçün kampus şəbəkəsi) və GET RICH OR RESET / Laser Grid oyunlarıdır.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Atəş Balıyevin təhsili və qazandığı mükafatlar nələrdir?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Atəş Balıyev Şəmkir Kimya-Biologiya Təmayüllü Liseyinin məzunudur və Azərbaycan Dövlət Aqrar Universitetində (ADAU) İnformasiya Texnologiyaları (İKT) ixtisası üzrə təhsil alır. SAF 2025 VEX V5 Robotexnika Qızıl Medalı (Zeta Team) və TransportTech Hakatonu 1-cilik (4444 AZN) mükafatçısıdır.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Atəş Balıyev və Atesh Studio ilə necə əlaqə saxlamaq olar?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Rəsmi e-poçt ünvanı: atesbaliyev@gmail.com, Rəsmi vebsayt: https://atesh.site, Telegram: @Baliyews (https://t.me/Baliyews), WhatsApp: +994 55 642 25 45 (https://wa.me/994556422545), YouTube: @thebaliyev, Instagram: @atesh_baliyev.',
+            },
+          },
+        ],
       },
     ],
   };

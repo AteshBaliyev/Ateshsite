@@ -58,7 +58,7 @@ export default function DataDeletionPage() {
             User Account & Data Deletion <span className="gold-gradient-text">Instructions</span>
           </h1>
           <p className="mt-3 text-sm text-slate-300 leading-relaxed">
-            Atesh Studio provides users with complete autonomy over their personal information. Follow these instructions to permanently delete your account and associated data from any Atesh Studio application (Bondify, TələbəX, E5cape, and all associated software).
+            Atesh Studio provides users with complete autonomy over their personal information. Follow these instructions to permanently delete your account and associated data from any Atesh Studio application (Bondify, GlowSnake.io, Trendim.store, TələbəX, and all associated software).
           </p>
           <div className="mt-4 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
             <span className="flex items-center gap-1.5">
@@ -156,8 +156,9 @@ export default function DataDeletionPage() {
                   className="w-full px-4 py-2.5 rounded-xl bg-[#141829] border border-amber-500/25 text-white text-xs sm:text-sm focus:outline-none focus:border-amber-400"
                 >
                   <option value="Bondify">Bondify (Social Discovery & Mini App)</option>
+                  <option value="Trendim.store">Trendim.store (E-Commerce)</option>
+                  <option value="GlowSnake.io">GlowSnake.io (Android Arcade Game)</option>
                   <option value="TələbəX">TələbəX (Campus Network)</option>
-                  <option value="E5cape">E5cape (3D Arcade Runner)</option>
                   <option value="GET RICH OR RESET">GET RICH OR RESET & Laser Grid</option>
                   <option value="Other">Other Atesh Studio Application</option>
                 </select>
